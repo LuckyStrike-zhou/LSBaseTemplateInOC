@@ -7,12 +7,23 @@
 //
 
 #import "TableViewController.h"
+#import "FileManagerVC.h"
 
 @interface TableViewController ()
+
+/**   */
+@property (nonatomic,strong) NSArray *modulesArr;
 
 @end
 
 @implementation TableViewController
+
+- (NSArray *)modulesArr{
+    if (!_modulesArr) {
+        _modulesArr = @[@"FastCache"];
+    }
+    return _modulesArr;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +33,13 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellID"];
+
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,23 +51,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.modulesArr.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID" forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.textLabel.text = self.modulesArr[indexPath.row];
     
     return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        
+        FileManagerVC *vc = [[FileManagerVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

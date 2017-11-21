@@ -26,7 +26,7 @@
     return [pred evaluateWithObject:self];
 }
 //身份证完全按照正确的编码格式来的，15位／18位皆可以
--(BOOL)isPaperId
+-(BOOL)isIdentityCardNum
 
 {
     //判断位数

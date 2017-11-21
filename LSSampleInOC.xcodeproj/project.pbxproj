@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F83492B4B55BDCB2B97CE3F /* libPods-LSSampleInOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6525A2969977C24DF82A1 /* libPods-LSSampleInOC.a */; };
+		CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */; };
+		CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */; };
 		CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29971FBD6DA400964647 /* AppDelegate.m */; };
 		CB5F299E1FBD6DA400964647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5F299C1FBD6DA400964647 /* Main.storyboard */; };
 		CB5F29A11FBD6DA400964647 /* LSSampleInOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB5F299F1FBD6DA400964647 /* LSSampleInOC.xcdatamodeld */; };
@@ -54,6 +56,10 @@
 		6342EA907E21418DBA54406C /* Pods-LSSampleInOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSampleInOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSSampleInOC/Pods-LSSampleInOC.debug.xcconfig"; sourceTree = "<group>"; };
 		B71094CFC4D3F9EA1F441174 /* libPods-LSSampleInOCUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSSampleInOCUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82EF6B0DC4DA8B0C7517B82 /* libPods-LSSampleInOCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LSSampleInOCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB34B2681FC2DA50004B0673 /* NSString+FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FileManager.h"; sourceTree = "<group>"; };
+		CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FileManager.m"; sourceTree = "<group>"; };
+		CB4780321FC3F5FB00EEED86 /* FileManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManagerVC.h; sourceTree = "<group>"; };
+		CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManagerVC.m; sourceTree = "<group>"; };
 		CB5F29931FBD6DA400964647 /* LSSampleInOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSSampleInOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5F29961FBD6DA400964647 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB5F29971FBD6DA400964647 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB34B1E81FC27BC4004B0673 /* String+FastCacheDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB4780321FC3F5FB00EEED86 /* FileManagerVC.h */,
+				CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */,
+			);
+			path = "String+FastCacheDemo";
+			sourceTree = "<group>";
+		};
 		CB5F298A1FBD6DA400964647 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +160,7 @@
 		CB5F29951FBD6DA400964647 /* LSSampleInOC */ = {
 			isa = PBXGroup;
 			children = (
+				CB34B1E81FC27BC4004B0673 /* String+FastCacheDemo */,
 				CB5F29CF1FBD6EDF00964647 /* SystemClasses */,
 				CB5F29CB1FBD6DB900964647 /* CoreData */,
 			);
@@ -237,6 +253,8 @@
 		CB5F29D51FBD701300964647 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				CB34B2681FC2DA50004B0673 /* NSString+FileManager.h */,
+				CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -439,6 +457,7 @@
 				TargetAttributes = {
 					CB5F29921FBD6DA400964647 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					CB5F2A011FBD7FD700964647 = {
@@ -562,9 +581,11 @@
 			files = (
 				CB5F29E11FBD72AD00964647 /* BaseModel.m in Sources */,
 				CB5F29F01FBD76FD00964647 /* BaseNavigationController.m in Sources */,
+				CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */,
 				CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */,
 				CB5F29F61FBD784A00964647 /* Package+SVProgressHUD.m in Sources */,
 				CB5F29DE1FBD729500964647 /* BaseViewController.m in Sources */,
+				CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */,
 				CB5F2A1C1FBD80A500964647 /* NSString+StringControl.m in Sources */,
 				CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */,
 				CB5F29A91FBD6DA400964647 /* main.m in Sources */,
@@ -733,12 +754,15 @@
 			baseConfigurationReference = 6342EA907E21418DBA54406C /* Pods-LSSampleInOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VYD78586B;
 				INFOPLIST_FILE = LSSampleInOC/SystemClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LuckyStrike.LSSampleInOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -748,12 +772,14 @@
 			baseConfigurationReference = 442D03D42758A43A2A8B6E09 /* Pods-LSSampleInOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VYD78586B;
 				INFOPLIST_FILE = LSSampleInOC/SystemClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LuckyStrike.LSSampleInOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

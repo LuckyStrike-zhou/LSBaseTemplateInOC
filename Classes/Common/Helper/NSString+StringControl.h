@@ -14,7 +14,7 @@
 
 - (BOOL)isEmail;
 
-- (BOOL)isPaperId;
+- (BOOL)isIdentityCardNum;
 
 - (NSString *)md5;
 

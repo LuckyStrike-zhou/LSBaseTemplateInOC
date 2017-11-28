@@ -44,6 +44,8 @@ description:__VA_ARGS__];\
                     Frame
  ********************************************** */
 
+#define Device_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
 // 获取屏幕 宽度、高度 bounds就是屏幕的全部区域
 #define FrameSCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
 #define FrameSCREEN_HEIGHT   ([UIScreen mainScreen].bounds.size.height)

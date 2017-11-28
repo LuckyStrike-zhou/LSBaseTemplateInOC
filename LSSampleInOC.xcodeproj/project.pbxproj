@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18EC65B91FCD035300D8B73A /* CorePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65B81FCD035300D8B73A /* CorePlaceHolder.m */; };
+		18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */; };
+		18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */; };
+		18EC65C21FCD03EF00D8B73A /* VideosPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65C11FCD03EF00D8B73A /* VideosPlaceHolder.m */; };
+		18EC65C51FCD040400D8B73A /* SoundsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65C41FCD040400D8B73A /* SoundsPlaceHolder.m */; };
+		18EC65C81FCD041200D8B73A /* FontsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65C71FCD041200D8B73A /* FontsPlaceHolder.m */; };
+		18EC65CB1FCD042500D8B73A /* ImagesPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65CA1FCD042500D8B73A /* ImagesPlaceHolder.m */; };
+		18EC65CE1FCD043000D8B73A /* VendorsCodePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65CD1FCD043000D8B73A /* VendorsCodePlaceHolder.m */; };
 		1F83492B4B55BDCB2B97CE3F /* libPods-LSSampleInOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6525A2969977C24DF82A1 /* libPods-LSSampleInOC.a */; };
 		CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */; };
 		CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */; };
@@ -47,6 +55,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18EC65B71FCD035300D8B73A /* CorePlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CorePlaceHolder.h; sourceTree = "<group>"; };
+		18EC65B81FCD035300D8B73A /* CorePlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorePlaceHolder.m; sourceTree = "<group>"; };
+		18EC65BA1FCD03C800D8B73A /* ViewModelsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelsPlaceHolder.h; sourceTree = "<group>"; };
+		18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModelsPlaceHolder.m; sourceTree = "<group>"; };
+		18EC65BD1FCD03D900D8B73A /* ViewsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewsPlaceHolder.h; sourceTree = "<group>"; };
+		18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewsPlaceHolder.m; sourceTree = "<group>"; };
+		18EC65C01FCD03EF00D8B73A /* VideosPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideosPlaceHolder.h; sourceTree = "<group>"; };
+		18EC65C11FCD03EF00D8B73A /* VideosPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideosPlaceHolder.m; sourceTree = "<group>"; };
+		18EC65C31FCD040400D8B73A /* SoundsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundsPlaceHolder.h; sourceTree = "<group>"; };
+		18EC65C41FCD040400D8B73A /* SoundsPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundsPlaceHolder.m; sourceTree = "<group>"; };
+		18EC65C61FCD041200D8B73A /* FontsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontsPlaceHolder.h; sourceTree = "<group>"; };
+		18EC65C71FCD041200D8B73A /* FontsPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontsPlaceHolder.m; sourceTree = "<group>"; };
+		18EC65C91FCD042500D8B73A /* ImagesPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagesPlaceHolder.h; sourceTree = "<group>"; };
+		18EC65CA1FCD042500D8B73A /* ImagesPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagesPlaceHolder.m; sourceTree = "<group>"; };
+		18EC65CC1FCD043000D8B73A /* VendorsCodePlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendorsCodePlaceHolder.h; sourceTree = "<group>"; };
+		18EC65CD1FCD043000D8B73A /* VendorsCodePlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VendorsCodePlaceHolder.m; sourceTree = "<group>"; };
 		211BE4A87D2CCB9BB0192166 /* Pods-LSSampleInOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSampleInOCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSSampleInOCTests/Pods-LSSampleInOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		23940F10C4913A6626320D97 /* Pods-LSSampleInOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSampleInOCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSSampleInOCTests/Pods-LSSampleInOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		252A0A41A042ED65BAA6FAC6 /* Pods-LSSampleInOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSampleInOCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSSampleInOCUITests/Pods-LSSampleInOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +286,8 @@
 		CB5F29E21FBD731600964647 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65B71FCD035300D8B73A /* CorePlaceHolder.h */,
+				18EC65B81FCD035300D8B73A /* CorePlaceHolder.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -269,6 +295,8 @@
 		CB5F29E31FBD733300964647 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65BD1FCD03D900D8B73A /* ViewsPlaceHolder.h */,
+				18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,6 +304,8 @@
 		CB5F29E51FBD737D00964647 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65BA1FCD03C800D8B73A /* ViewModelsPlaceHolder.h */,
+				18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -303,6 +333,8 @@
 		CB5F29E81FBD740E00964647 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65C91FCD042500D8B73A /* ImagesPlaceHolder.h */,
+				18EC65CA1FCD042500D8B73A /* ImagesPlaceHolder.m */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -310,6 +342,8 @@
 		CB5F29E91FBD741D00964647 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65C61FCD041200D8B73A /* FontsPlaceHolder.h */,
+				18EC65C71FCD041200D8B73A /* FontsPlaceHolder.m */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -317,6 +351,8 @@
 		CB5F29EA1FBD742B00964647 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65C31FCD040400D8B73A /* SoundsPlaceHolder.h */,
+				18EC65C41FCD040400D8B73A /* SoundsPlaceHolder.m */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -324,6 +360,8 @@
 		CB5F29EB1FBD743300964647 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65C01FCD03EF00D8B73A /* VideosPlaceHolder.h */,
+				18EC65C11FCD03EF00D8B73A /* VideosPlaceHolder.m */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -340,6 +378,8 @@
 		CB5F29ED1FBD748000964647 /* VendorsCode */ = {
 			isa = PBXGroup;
 			children = (
+				18EC65CC1FCD043000D8B73A /* VendorsCodePlaceHolder.h */,
+				18EC65CD1FCD043000D8B73A /* VendorsCodePlaceHolder.m */,
 			);
 			path = VendorsCode;
 			sourceTree = "<group>";
@@ -579,17 +619,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EC65C81FCD041200D8B73A /* FontsPlaceHolder.m in Sources */,
+				18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */,
 				CB5F29E11FBD72AD00964647 /* BaseModel.m in Sources */,
 				CB5F29F01FBD76FD00964647 /* BaseNavigationController.m in Sources */,
+				18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */,
 				CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */,
 				CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */,
+				18EC65CB1FCD042500D8B73A /* ImagesPlaceHolder.m in Sources */,
+				18EC65B91FCD035300D8B73A /* CorePlaceHolder.m in Sources */,
 				CB5F29F61FBD784A00964647 /* Package+SVProgressHUD.m in Sources */,
+				18EC65C51FCD040400D8B73A /* SoundsPlaceHolder.m in Sources */,
 				CB5F29DE1FBD729500964647 /* BaseViewController.m in Sources */,
 				CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */,
 				CB5F2A1C1FBD80A500964647 /* NSString+StringControl.m in Sources */,
+				18EC65C21FCD03EF00D8B73A /* VideosPlaceHolder.m in Sources */,
 				CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */,
 				CB5F29A91FBD6DA400964647 /* main.m in Sources */,
 				CB5F29A11FBD6DA400964647 /* LSSampleInOC.xcdatamodeld in Sources */,
+				18EC65CE1FCD043000D8B73A /* VendorsCodePlaceHolder.m in Sources */,
 				CB5F29CE1FBD6E6300964647 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,12 +10,15 @@
 
 @interface BaseViewController : UIViewController
 
+@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
+@property (nonatomic, assign) BOOL statusBarHidden;
+
+
 /**
  *  VIEW是否渗透导航栏
- * (YES_VIEW渗透导航栏下／NO_VIEW不渗透导航栏下)
+ * (YES渗透导航栏下／NO不渗透导航栏下)
  */
 @property (assign,nonatomic) BOOL isExtendLayout;
-
 
 /**
  * 功能：设置修改StatusBar

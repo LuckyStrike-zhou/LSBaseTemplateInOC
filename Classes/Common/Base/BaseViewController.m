@@ -12,8 +12,6 @@
 
 @interface BaseViewController ()
 
-@property (nonatomic, assign) UIStatusBarStyle statusBarStyle;
-@property (nonatomic, assign) BOOL statusBarHidden;
 @property (nonatomic, assign) BOOL changeStatusBarAnimated;
 
 @end
@@ -29,19 +27,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.view.backgroundColor = C_WHITE;
     [self setIsExtendLayout:NO];
-    
     [self removeNavgationBarLine];
-    
-    [self layoutNavigationBar:IMAGE_NAMED(@"navigationBarBG@2x.png") titleColor:black_color titleFont:H18 leftBarButtonItem:nil rightBarButtonItem:nil];
 
-    if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
-        [self setAutomaticallyAdjustsScrollViewInsets:NO];
-    }
-
-    self.view.backgroundColor = white_color;
-    
-    
 }
 
 #pragma mark - system

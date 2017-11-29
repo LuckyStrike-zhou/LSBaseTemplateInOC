@@ -8,6 +8,9 @@
 
 #import "TableViewController.h"
 #import "FileManagerVC.h"
+#import "BaseDemoViewController.h"
+#import "BaseDemoTabbarController.h"
+#import "BaseDemoNavigationController.h"
 
 @interface TableViewController ()
 
@@ -20,7 +23,7 @@
 
 - (NSArray *)modulesArr{
     if (!_modulesArr) {
-        _modulesArr = @[@"FastCache"];
+        _modulesArr = @[@"FastCache",@"BaseDemo"];
     }
     return _modulesArr;
 }
@@ -73,6 +76,20 @@
         
         FileManagerVC *vc = [[FileManagerVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 1){
+        
+        NSString *title = self.modulesArr[indexPath.row];
+        
+        BaseDemoViewController *baseVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"BaseDemoVC"];
+        baseVC.title = title;
+        
+        BaseDemoNavigationController *baseNVC = [[BaseDemoNavigationController alloc] initWithRootViewController:baseVC];
+        
+        BaseDemoTabbarController *baseTVC = [[BaseDemoTabbarController alloc] init];
+        baseTVC.viewControllers = @[baseNVC];
+        
+        [self.navigationController pushViewController:baseTVC animated:YES];
+        
     }
     
 }

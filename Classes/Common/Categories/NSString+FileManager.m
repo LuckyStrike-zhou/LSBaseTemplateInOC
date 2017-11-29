@@ -128,7 +128,7 @@
 }
 
 - (BOOL)checkFullPath{
-    BOOL docu = [self containsString:[NSString stringWithFormat:@"%@",[NSString FastDocument]]];
+    BOOL docu = [self containsString:[NSString stringWithFormat:@"%@/",[NSString FastDocument]]];
     BOOL lib = [self containsString:[NSString stringWithFormat:@"%@/",[NSString FastLibrary]]];
     BOOL cac = [self containsString:[NSString stringWithFormat:@"%@/",[NSString FastCaches]]];
     BOOL tmp = [self containsString:[NSString stringWithFormat:@"%@/",[NSString FastTmp]]];

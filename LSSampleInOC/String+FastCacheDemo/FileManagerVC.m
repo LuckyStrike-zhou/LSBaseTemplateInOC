@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = white_color;
+    self.view.backgroundColor = C_WHITE;
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
     [self.view addSubview:label];

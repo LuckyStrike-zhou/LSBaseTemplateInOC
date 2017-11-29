@@ -6,29 +6,28 @@
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
-#import "NSString+StringControl.h"
-#import <CommonCrypto/CommonDigest.h>
+#import "NSString+Verify.h"
 
-@implementation NSString (StringControl)
+@implementation NSString (Verify)
+
 //手机号验证
-- (BOOL)isMobilePhoneNum {
+- (BOOL)verifyMobilePhoneNum {
     //手机号以13， 15，18开头,8个 数字字符
     NSString *phoneRegex = @"^((13[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
     return [phoneTest evaluateWithObject:self];
 }
+
 //邮箱验证
-- (BOOL)isEmail
-{
+- (BOOL)verifyEmail {
     NSString * regex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *   pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     
     return [pred evaluateWithObject:self];
 }
-//身份证完全按照正确的编码格式来的，15位／18位皆可以
--(BOOL)isIdentityCardNum
 
-{
+//身份证完全按照正确的编码格式来的，15位／18位皆可以
+-(BOOL)verifyIdentityCardNum {
     //判断位数
     if ([self length] != 15 && [self length] != 18) {
         return NO;
@@ -102,6 +101,7 @@
 - (NSString *)getStringWithRange:(NSString *)str Value1:(NSInteger)value1 Value2:(NSInteger )value2 {
     return [str substringWithRange:NSMakeRange(value1,value2)];
 }
+
 /**
  * 功能:判断是否在地区码内
  * 参数:地区码
@@ -148,45 +148,5 @@
     }
     return YES;
 }
-
-- (NSString *)md5{
-    const char *cStr = [self UTF8String];
-    unsigned char result[16];
-    CC_MD5( cStr, (CC_LONG)strlen(cStr), result );
-    return [NSString stringWithFormat:
-            @"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",
-            result[0], result[1], result[2], result[3],
-            result[4], result[5], result[6], result[7],
-            result[8], result[9], result[10], result[11],
-            result[12], result[13], result[14], result[15]
-            ];
-}
-
-- (NSString *)URLEncodedString
-{
-    /*
-     CFURLCreateStringByAddingPercentEscapes函数是Core Foundation框架提供的C函数，可以把内容转换成URL【资源定位符】编码，
-     
-     */
-    NSString *result = ( NSString *)
-    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                              (CFStringRef)self,
-                                                              NULL,//指定了将本身为非法的URL字符不进行编码的字符集合
-                                                              CFSTR("!*();+$,%#[] "),//将本身为合法的URL字符需要进行编码的字符集合
-                                                              kCFStringEncodingUTF8));
-    return result;
-}
-
-- (NSString*)URLDecodedString
-{
-    //    CFURLCreateStringByReplacingPercentEscapesUsingEncoding与CFURLCreateStringByAddingPercentEscapes相反，是进行URL解码
-    NSString *result = ( NSString *)
-    CFBridgingRelease(CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
-                                                                              (CFStringRef)self,
-                                                                              CFSTR(""),//指定不进行解码的字符集
-                                                                              kCFStringEncodingUTF8));
-    return result;
-}
-
 
 @end

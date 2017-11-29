@@ -1,20 +1,14 @@
 //
-//  NSString+Helper.h
-//  Sample
+//  NSString+Secret.h
+//  LSSampleInOC
 //
-//  Created by LuckyStrike on 2017/11/15.
+//  Created by Apple on 2017/11/28.
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (StringControl)
-
-- (BOOL)isMobilePhoneNum;
-
-- (BOOL)isEmail;
-
-- (BOOL)isIdentityCardNum;
+@interface NSString (Secret)
 
 - (NSString *)md5;
 

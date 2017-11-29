@@ -53,16 +53,26 @@
                                 <color key="backgroundColor" red="1" green="0.95131356318137306" blue="0.61054233051478191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="改变状态栏样式"/>
                                 <connections>
-                                    <action selector="changeStatus:" destination="wx7-v0-p0u" eventType="touchUpInside" id="6HZ-61-BdK"/>
+                                    <action selector="changeStatus:" destination="wx7-v0-p0u" eventType="touchUpInside" id="e54-Vk-FrP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnS-fs-azk">
                                 <rect key="frame" x="124" y="168" width="127" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.95131356320000005" blue="0.61054233049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="隐藏导航栏"/>
+                                <state key="normal" title="改变渗透"/>
                                 <connections>
-                                    <action selector="changeNavBar:" destination="wx7-v0-p0u" eventType="touchUpInside" id="2TR-qj-MBq"/>
+                                    <action selector="changeExtend:" destination="wx7-v0-p0u" eventType="touchUpInside" id="Ez6-Pi-6Bo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXo-6J-8rA">
+                                <rect key="frame" x="124" y="264" width="127" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.95131356320000005" blue="0.61054233049999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="移除导航栏线"/>
+                                <connections>
+                                    <action selector="changeExtend:" destination="wx7-v0-p0u" eventType="touchUpInside" id="z8j-UV-jMA"/>
+                                    <action selector="removeNavLine:" destination="wx7-v0-p0u" eventType="touchUpInside" id="4M6-nd-PHP"/>
                                 </connections>
                             </button>
                         </subviews>

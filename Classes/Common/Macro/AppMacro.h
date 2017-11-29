@@ -134,6 +134,19 @@
 #define C_GRAY      [UIColor grayColor]
 #define C_MAGENTA   [UIColor magentaColor]
 
+//通用视觉规范
+#define CC_BLUE RGB(0, 153, 255)             //蓝色
+#define CC_ORANGE RGB(253, 106, 60)          //橙色
+#define CC_YELLOW RGB(239, 166, 68)          //黄色
+#define CC_BLACK RGB(68, 68, 68)             //浅黑色
+#define CC_GRAY RGB(102, 102, 102)           //灰色
+#define CC_LIGHTGRAY RGB(153, 153, 153)      //浅灰色
+#define CC_COFFEE RGB(185,152,99)            //咖啡色
+#define CC_COMMON_BG  RGB(248, 248, 248)      //灰白色
+#define CC_SEPARATOR_LINE RGB(232, 232, 232)  //分割线颜色
+#define CC_TRANSLUCENT RGBA(0,0,0,0.55)  //半透明颜色
+#define CC_LGRAY RGB(238,238,238)
+
 #define C_BGCOLOR RGBA(234, 234, 234, 1)
 
 #define C_TEXT_COLOR RGBA(109, 109, 109, 1)

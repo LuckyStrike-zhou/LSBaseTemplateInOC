@@ -22,7 +22,6 @@ pod 'MJRefresh'
 pod 'SDWebImage'
 pod 'SVProgressHUD'
 pod 'MBProgressHUD'
-pod 'JSONModel'
 pod 'MJExtension'
 pod 'FMDB'
 

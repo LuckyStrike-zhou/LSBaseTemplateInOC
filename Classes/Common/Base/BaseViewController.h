@@ -26,18 +26,9 @@
  *      （2）是否隐藏StatusBar：statusBarHidden
  *      （3）是否动画过渡：animated
  */
-
 -(void)changeStatusBarStyle:(UIStatusBarStyle)statusBarStyle
             statusBarHidden:(BOOL)statusBarHidden
     changeStatusBarAnimated:(BOOL)animated;
-
-/**
- * 功能：隐藏显示导航栏
- * 参数：（1）是否隐藏导航栏：isHide
- *      （2）是否有动画过渡：animated
- */
--(void)hideNavigationBar:(BOOL)isHide
-                animated:(BOOL)animated;
 
 /**
  * 功能： 布局导航栏界面
@@ -52,6 +43,12 @@
                  titleFont:(UIFont*)titleFont
          leftBarButtonItem:(UIBarButtonItem*)leftItem
         rightBarButtonItem:(UIBarButtonItem*)rightItem;
+/**
+ * 功能：移除导航栏线
+ *
+ */
+- (void)removeNavgationBarLine;
+
 
 
 @end

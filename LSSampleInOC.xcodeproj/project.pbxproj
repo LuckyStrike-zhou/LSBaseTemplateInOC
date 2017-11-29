@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1894E9FF1FCEAAF700A4210F /* LSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894E9FE1FCEAAF700A4210F /* LSHelper.m */; };
+		1894EA021FCEB48100A4210F /* MBProgressHUDPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894EA011FCEB48100A4210F /* MBProgressHUDPackage.m */; };
 		18EC65B91FCD035300D8B73A /* CorePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65B81FCD035300D8B73A /* CorePlaceHolder.m */; };
 		18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */; };
 		18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */; };
@@ -59,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1894E9FD1FCEAAF700A4210F /* LSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHelper.h; sourceTree = "<group>"; };
+		1894E9FE1FCEAAF700A4210F /* LSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSHelper.m; sourceTree = "<group>"; };
+		1894EA001FCEB48100A4210F /* MBProgressHUDPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDPackage.h; sourceTree = "<group>"; };
+		1894EA011FCEB48100A4210F /* MBProgressHUDPackage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDPackage.m; sourceTree = "<group>"; };
 		18EC65B71FCD035300D8B73A /* CorePlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CorePlaceHolder.h; sourceTree = "<group>"; };
 		18EC65B81FCD035300D8B73A /* CorePlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorePlaceHolder.m; sourceTree = "<group>"; };
 		18EC65BA1FCD03C800D8B73A /* ViewModelsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelsPlaceHolder.h; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 			children = (
 				CB5F29D01FBD6EFA00964647 /* Classes */,
 				CB5F29951FBD6DA400964647 /* LSSampleInOC */,
+				CB5F299C1FBD6DA400964647 /* Main.storyboard */,
 				CB5F2A031FBD7FD700964647 /* LSSampleInOCTests */,
 				CB5F2A111FBD7FE800964647 /* LSSampleInOCUITests */,
 				CB5F29941FBD6DA400964647 /* Products */,
@@ -232,7 +239,6 @@
 				CB5F29971FBD6DA400964647 /* AppDelegate.m */,
 				CB5F29CC1FBD6E6300964647 /* TableViewController.h */,
 				CB5F29CD1FBD6E6300964647 /* TableViewController.m */,
-				CB5F299C1FBD6DA400964647 /* Main.storyboard */,
 				CB5F29A21FBD6DA400964647 /* Assets.xcassets */,
 				CB5F29A41FBD6DA400964647 /* LaunchScreen.storyboard */,
 				CB5F29A71FBD6DA400964647 /* Info.plist */,
@@ -298,6 +304,8 @@
 				CB5F2A1A1FBD80A500964647 /* NSString+Verify.m */,
 				18EC65E31FCD5C4C00D8B73A /* NSString+Secret.h */,
 				18EC65E41FCD5C4C00D8B73A /* NSString+Secret.m */,
+				1894E9FD1FCEAAF700A4210F /* LSHelper.h */,
+				1894E9FE1FCEAAF700A4210F /* LSHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -399,6 +407,8 @@
 			children = (
 				CB5F29F41FBD784A00964647 /* Package+SVProgressHUD.h */,
 				CB5F29F51FBD784A00964647 /* Package+SVProgressHUD.m */,
+				1894EA001FCEB48100A4210F /* MBProgressHUDPackage.h */,
+				1894EA011FCEB48100A4210F /* MBProgressHUDPackage.m */,
 			);
 			path = Package;
 			sourceTree = "<group>";
@@ -657,6 +667,7 @@
 				CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */,
 				18EC65CB1FCD042500D8B73A /* ImagesPlaceHolder.m in Sources */,
 				18EC65B91FCD035300D8B73A /* CorePlaceHolder.m in Sources */,
+				1894EA021FCEB48100A4210F /* MBProgressHUDPackage.m in Sources */,
 				CB5F29F61FBD784A00964647 /* Package+SVProgressHUD.m in Sources */,
 				18EC65C51FCD040400D8B73A /* SoundsPlaceHolder.m in Sources */,
 				CB5F29DE1FBD729500964647 /* BaseViewController.m in Sources */,
@@ -668,6 +679,7 @@
 				CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */,
 				CB5F29A91FBD6DA400964647 /* main.m in Sources */,
 				CB5F29A11FBD6DA400964647 /* LSSampleInOC.xcdatamodeld in Sources */,
+				1894E9FF1FCEAAF700A4210F /* LSHelper.m in Sources */,
 				18EC65E51FCD5C4C00D8B73A /* NSString+Secret.m in Sources */,
 				18EC65CE1FCD043000D8B73A /* VendorsCodePlaceHolder.m in Sources */,
 				CB5F29CE1FBD6E6300964647 /* TableViewController.m in Sources */,

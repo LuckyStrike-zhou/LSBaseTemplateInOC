@@ -86,7 +86,7 @@
         BaseDemoNavigationController *baseNVC = [[BaseDemoNavigationController alloc] initWithRootViewController:baseVC];
         
         BaseDemoTabbarController *baseTVC = [[BaseDemoTabbarController alloc] init];
-        baseTVC.viewControllers = @[baseNVC];
+        baseTVC.viewControllers = @[baseNVC,[[BaseViewController alloc] init],[[BaseViewController alloc] init]];
         
         [self.navigationController pushViewController:baseTVC animated:YES];
         

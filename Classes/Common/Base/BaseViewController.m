@@ -29,8 +29,6 @@
     
     self.view.backgroundColor = C_WHITE;
     [self setIsExtendLayout:NO];
-    [self removeNavgationBarLine];
-
 }
 
 #pragma mark - system
@@ -98,28 +96,14 @@
              statusBarHidden:(BOOL)statusBarHidden
      changeStatusBarAnimated:(BOOL)animated {
     
-    self.statusBarStyle=statusBarStyle;
-    self.statusBarHidden=statusBarHidden;
+    self.statusBarStyle = statusBarStyle;
+    self.statusBarHidden = statusBarHidden;
     if (animated) {
         [UIView animateWithDuration:0.25 animations:^{
             [self setNeedsStatusBarAppearanceUpdate];
         }];
-    }
-    else{
+    }else{
         [self setNeedsStatusBarAppearanceUpdate];
-    }
-}
-
-- (void)hideNavigationBar:(BOOL)isHide
-                 animated:(BOOL)animated{
-    
-    if (animated) {
-        [UIView animateWithDuration:0.25 animations:^{
-            self.navigationController.navigationBarHidden=isHide;
-        }];
-    }
-    else{
-        self.navigationController.navigationBarHidden=isHide;
     }
 }
 

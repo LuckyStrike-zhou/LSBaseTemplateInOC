@@ -10,6 +10,10 @@
 
 @interface NSString (Secret)
 
+/**
+    AES Base64 DES
+ */
+
 - (NSString *)md5;
 
 - (NSString *)URLEncodedString;

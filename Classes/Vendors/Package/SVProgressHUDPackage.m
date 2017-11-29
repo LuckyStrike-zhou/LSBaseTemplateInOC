@@ -1,19 +1,19 @@
 //
-//  Package+SVProgressHUD.m
+//  SVProgressHUDPackage.m
 //  LSSampleInOC
 //
 //  Created by LuckyStrike on 2017/11/16.
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
-#import "Package+SVProgressHUD.h"
+#import "SVProgressHUDPackage.h"
 #import <SDWebImageManager.h>
 #import <SDWebImageCompat.h>
 #import <SVProgressHUD.h>
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
-@implementation Package_SVProgressHUD
+@implementation SVProgressHUDPackage
 
 + (void)load{
     

@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "FileManagerVC.h"
+#import "AFNViewController.h"
 
 @interface TableViewController ()
 
@@ -20,7 +21,7 @@
 
 - (NSArray *)modulesArr{
     if (!_modulesArr) {
-        _modulesArr = @[@"FastCache"];
+        _modulesArr = @[@"FastCache",@"AFNPackage"];
     }
     return _modulesArr;
 }
@@ -73,6 +74,10 @@
         
         FileManagerVC *vc = [[FileManagerVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 1){
+        AFNViewController *vc = [[AFNViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
     }
     
 }

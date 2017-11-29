@@ -10,6 +10,10 @@
 		1F83492B4B55BDCB2B97CE3F /* libPods-LSSampleInOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6525A2969977C24DF82A1 /* libPods-LSSampleInOC.a */; };
 		CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */; };
 		CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */; };
+		CB4780381FC4157D00EEED86 /* AFNPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4780371FC4157D00EEED86 /* AFNPackage.m */; };
+		CB4F9A331FC6C5AD009B2112 /* NSDate+FastTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4F9A321FC6C5AD009B2112 /* NSDate+FastTransform.m */; };
+		CB59323C1FC57BBD00548660 /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB59323B1FC57BBD00548660 /* AFNViewController.m */; };
+		CB59323F1FC57D9E00548660 /* LSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB59323E1FC57D9E00548660 /* LSHelper.m */; };
 		CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29971FBD6DA400964647 /* AppDelegate.m */; };
 		CB5F299E1FBD6DA400964647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5F299C1FBD6DA400964647 /* Main.storyboard */; };
 		CB5F29A11FBD6DA400964647 /* LSSampleInOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB5F299F1FBD6DA400964647 /* LSSampleInOC.xcdatamodeld */; };
@@ -21,7 +25,7 @@
 		CB5F29E11FBD72AD00964647 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29E01FBD72AD00964647 /* BaseModel.m */; };
 		CB5F29F01FBD76FD00964647 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29EF1FBD76FD00964647 /* BaseNavigationController.m */; };
 		CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29F21FBD771B00964647 /* BaseTabBarController.m */; };
-		CB5F29F61FBD784A00964647 /* Package+SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29F51FBD784A00964647 /* Package+SVProgressHUD.m */; };
+		CB5F29F61FBD784A00964647 /* SVProgressHUDPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29F51FBD784A00964647 /* SVProgressHUDPackage.m */; };
 		CB5F29FB1FBD7D5900964647 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F29FA1FBD7D4500964647 /* AssetsLibrary.framework */; };
 		CB5F29FD1FBD7D6500964647 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F29FC1FBD7D5D00964647 /* AVFoundation.framework */; };
 		CB5F2A051FBD7FD700964647 /* LSSampleInOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F2A041FBD7FD700964647 /* LSSampleInOCTests.m */; };
@@ -60,6 +64,15 @@
 		CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FileManager.m"; sourceTree = "<group>"; };
 		CB4780321FC3F5FB00EEED86 /* FileManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManagerVC.h; sourceTree = "<group>"; };
 		CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManagerVC.m; sourceTree = "<group>"; };
+		CB4780361FC4157D00EEED86 /* AFNPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNPackage.h; sourceTree = "<group>"; };
+		CB4780371FC4157D00EEED86 /* AFNPackage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNPackage.m; sourceTree = "<group>"; };
+		CB4F9A301FC6BFAE009B2112 /* UIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIMacro.h; sourceTree = "<group>"; };
+		CB4F9A311FC6C5AD009B2112 /* NSDate+FastTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FastTransform.h"; sourceTree = "<group>"; };
+		CB4F9A321FC6C5AD009B2112 /* NSDate+FastTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FastTransform.m"; sourceTree = "<group>"; };
+		CB59323A1FC57BBD00548660 /* AFNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNViewController.h; sourceTree = "<group>"; };
+		CB59323B1FC57BBD00548660 /* AFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
+		CB59323D1FC57D9E00548660 /* LSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHelper.h; sourceTree = "<group>"; };
+		CB59323E1FC57D9E00548660 /* LSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSHelper.m; sourceTree = "<group>"; };
 		CB5F29931FBD6DA400964647 /* LSSampleInOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSSampleInOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5F29961FBD6DA400964647 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB5F29971FBD6DA400964647 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,8 +96,8 @@
 		CB5F29EF1FBD76FD00964647 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		CB5F29F11FBD771B00964647 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		CB5F29F21FBD771B00964647 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
-		CB5F29F41FBD784A00964647 /* Package+SVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Package+SVProgressHUD.h"; sourceTree = "<group>"; };
-		CB5F29F51FBD784A00964647 /* Package+SVProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Package+SVProgressHUD.m"; sourceTree = "<group>"; };
+		CB5F29F41FBD784A00964647 /* SVProgressHUDPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDPackage.h; sourceTree = "<group>"; };
+		CB5F29F51FBD784A00964647 /* SVProgressHUDPackage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDPackage.m; sourceTree = "<group>"; };
 		CB5F29FA1FBD7D4500964647 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		CB5F29FC1FBD7D5D00964647 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CB5F2A021FBD7FD700964647 /* LSSampleInOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSSampleInOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +143,8 @@
 			children = (
 				CB4780321FC3F5FB00EEED86 /* FileManagerVC.h */,
 				CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */,
+				CB59323A1FC57BBD00548660 /* AFNViewController.h */,
+				CB59323B1FC57BBD00548660 /* AFNViewController.m */,
 			);
 			path = "String+FastCacheDemo";
 			sourceTree = "<group>";
@@ -219,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5F29D81FBD721A00964647 /* AppMacro.h */,
+				CB4F9A301FC6BFAE009B2112 /* UIMacro.h */,
 				CB5F29D91FBD722A00964647 /* NotificationMacro.h */,
 				CB5F29DB1FBD727B00964647 /* UtilsMacro.h */,
 				CB5F29DA1FBD723F00964647 /* VendorMacro.h */,
@@ -246,6 +262,8 @@
 			children = (
 				CB5F2A1B1FBD80A500964647 /* NSString+StringControl.h */,
 				CB5F2A1A1FBD80A500964647 /* NSString+StringControl.m */,
+				CB59323D1FC57D9E00548660 /* LSHelper.h */,
+				CB59323E1FC57D9E00548660 /* LSHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -255,6 +273,8 @@
 			children = (
 				CB34B2681FC2DA50004B0673 /* NSString+FileManager.h */,
 				CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */,
+				CB4F9A311FC6C5AD009B2112 /* NSDate+FastTransform.h */,
+				CB4F9A321FC6C5AD009B2112 /* NSDate+FastTransform.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -331,8 +351,10 @@
 		CB5F29EC1FBD747800964647 /* Package */ = {
 			isa = PBXGroup;
 			children = (
-				CB5F29F41FBD784A00964647 /* Package+SVProgressHUD.h */,
-				CB5F29F51FBD784A00964647 /* Package+SVProgressHUD.m */,
+				CB4780361FC4157D00EEED86 /* AFNPackage.h */,
+				CB4780371FC4157D00EEED86 /* AFNPackage.m */,
+				CB5F29F41FBD784A00964647 /* SVProgressHUDPackage.h */,
+				CB5F29F51FBD784A00964647 /* SVProgressHUDPackage.m */,
 			);
 			path = Package;
 			sourceTree = "<group>";
@@ -581,9 +603,13 @@
 			files = (
 				CB5F29E11FBD72AD00964647 /* BaseModel.m in Sources */,
 				CB5F29F01FBD76FD00964647 /* BaseNavigationController.m in Sources */,
+				CB59323C1FC57BBD00548660 /* AFNViewController.m in Sources */,
+				CB4780381FC4157D00EEED86 /* AFNPackage.m in Sources */,
 				CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */,
+				CB4F9A331FC6C5AD009B2112 /* NSDate+FastTransform.m in Sources */,
 				CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */,
-				CB5F29F61FBD784A00964647 /* Package+SVProgressHUD.m in Sources */,
+				CB59323F1FC57D9E00548660 /* LSHelper.m in Sources */,
+				CB5F29F61FBD784A00964647 /* SVProgressHUDPackage.m in Sources */,
 				CB5F29DE1FBD729500964647 /* BaseViewController.m in Sources */,
 				CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */,
 				CB5F2A1C1FBD80A500964647 /* NSString+StringControl.m in Sources */,

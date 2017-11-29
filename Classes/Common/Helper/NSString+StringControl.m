@@ -188,5 +188,12 @@
     return result;
 }
 
+- (BOOL)isEmpty{
+    if (self == nil || [self isEqualToString:@""]) {
+        return YES;
+    }
+    
+    return [[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] isEqualToString:@""];
+}
 
 @end

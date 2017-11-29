@@ -1,5 +1,5 @@
 //
-//  Package+SVProgressHUD.h
+//  SVProgressHUDPackage.h
 //  LSSampleInOC
 //
 //  Created by LuckyStrike on 2017/11/16.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface Package_SVProgressHUD : NSObject
+@interface SVProgressHUDPackage : NSObject
 
 extern void ShowSuccessStatus(NSString *statues);
 extern void ShowErrorStatus(NSString *statues);

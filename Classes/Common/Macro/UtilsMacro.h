@@ -9,15 +9,33 @@
 #ifndef UtilsMacro_h
 #define UtilsMacro_h
 
+/**********************************************
+            类别简写
+ ********************************************** */
+
+#define USERDEFAULTS_Macro   [NSUserDefaults standardUserDefaults]
+#define ROOTVIEWCONTROLL_Macro  [[[UIApplication sharedApplication] keyWindow] rootViewController]
+
+
+#define INT_TO_STRING_Macro(int_str) [NSString stringWithFormat:@"%d",int_str];
+#define Float_TO_STRING_Macro(float_str) [NSString stringWithFormat:@"%.2d",float_str];
+
+#define STRING_Macro(str1,str2) [NSString stringWithFormat:@"%@%@",str1,str2]
+
+#define URL_Macro(url) [NSURL URLWithString:url]
+#define IMAGE_NAMED_Macro(imgName) [UIImage imageNamed:imgName]
+
+//拨打电话
+#define MAKE_CALL_Macro(phoneNumber) [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",phoneNumber]]];
 /**
     延迟
  */
-#define delayRun(s) dispatch_time(DISPATCH_TIME_NOW, (int64_t)(s * NSEC_PER_SEC)), dispatch_get_main_queue()
+#define DELAY_Macro(s) dispatch_time(DISPATCH_TIME_NOW, (int64_t)(s * NSEC_PER_SEC)), dispatch_get_main_queue()
 
 /**
     圆角和加边框
  */
-#define ViewBorderRadius(View, Radius, Width, Color)\
+#define ViewBorderRadius_Macro(View, Radius, Width, Color)\
 \
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES];\
@@ -27,7 +45,7 @@
 /**
     圆角
  */
-#define ViewRadius(View, Radius)\
+#define ViewRadius_Macro(View, Radius)\
 \
 [View.layer setCornerRadius:(Radius)];\
 [View.layer setMasksToBounds:YES]
@@ -35,34 +53,25 @@
 /**
     view Tag
  */
-#define VIEWWITHTAG(_OBJECT, _TAG)\
+#define VIEWWITHTAG_Macro(_OBJECT, _TAG)\
 \
 [_OBJECT viewWithTag : _TAG]
 
-// 本地化字符串
-/** NSLocalizedString宏做的其实就是在当前bundle中查找资源文件名“Localizable.strings”(参数:键＋注释) */
-#define LocalString(x, ...)     NSLocalizedString(x, nil)
-/** NSLocalizedStringFromTable宏做的其实就是在当前bundle中查找资源文件名“xxx.strings”(参数:键＋文件名＋注释) */
-#define AppLocalString(x, ...)  NSLocalizedStringFromTable(x, @"someName", nil)
+/**********************************************
+        单例
+ ********************************************** */
+#define SharedInstanceInterfaceBuilder(ClassName) \
++ (instancetype)sharedInstance;
 
-
-#pragma mark - iPhone设备使用的编译
-#if TARGET_OS_IPHONE
-//iPhone Device
-#endif
-
-#pragma mark - 模拟器使用的编译
-#if TARGET_IPHONE_SIMULATOR
-//iPhone Simulator
-#endif
-
-#pragma mark - 检测是否是ARC
-//ARC
-#if __has_feature(objc_arc)
-//compiling with ARC
-#else
-// compiling without ARC
-#endif
-
+#define SharedInstanceBuilder(ClassName) \
++ (instancetype)sharedInstance\
+{\
+static dispatch_once_t onceToken;\
+static ClassName* instance;\
+dispatch_once(&onceToken, ^{\
+instance = [[ClassName alloc] init];\
+});\
+return instance;\
+}
 
 #endif /* UtilsMacro_h */

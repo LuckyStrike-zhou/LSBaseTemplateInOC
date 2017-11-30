@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1894E9FF1FCEAAF700A4210F /* LSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894E9FE1FCEAAF700A4210F /* LSHelper.m */; };
-		1894EA021FCEB48100A4210F /* MBProgressHUDPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894EA011FCEB48100A4210F /* MBProgressHUDPackage.m */; };
+		1832F8751FCFB66A00AB9C27 /* LSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8701FCFB66A00AB9C27 /* LSHelper.m */; };
+		1832F8761FCFB66A00AB9C27 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8721FCFB66A00AB9C27 /* NSString+Verify.m */; };
+		1832F8771FCFB66A00AB9C27 /* NSString+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8741FCFB66A00AB9C27 /* NSString+Secret.m */; };
+		1832F87E1FCFB69200AB9C27 /* MBProgressHUDPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8791FCFB69200AB9C27 /* MBProgressHUDPackage.m */; };
+		1832F87F1FCFB69200AB9C27 /* AFNPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F87B1FCFB69200AB9C27 /* AFNPackage.m */; };
+		1832F8801FCFB69200AB9C27 /* SVProgressHUDPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F87D1FCFB69200AB9C27 /* SVProgressHUDPackage.m */; };
+		1832F8841FCFB6DB00AB9C27 /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8831FCFB6DB00AB9C27 /* AFNViewController.m */; };
+		1832F88B1FCFF54500AB9C27 /* ProgressHUDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F88A1FCFF54500AB9C27 /* ProgressHUDDemoController.m */; };
 		18EC65B91FCD035300D8B73A /* CorePlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65B81FCD035300D8B73A /* CorePlaceHolder.m */; };
 		18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */; };
 		18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */; };
@@ -20,10 +26,11 @@
 		18EC65D21FCD076800D8B73A /* BaseDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65D11FCD076800D8B73A /* BaseDemoViewController.m */; };
 		18EC65D51FCD079400D8B73A /* BaseDemoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65D41FCD079400D8B73A /* BaseDemoNavigationController.m */; };
 		18EC65D81FCD07BD00D8B73A /* BaseDemoTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65D71FCD07BD00D8B73A /* BaseDemoTabbarController.m */; };
-		18EC65E51FCD5C4C00D8B73A /* NSString+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65E41FCD5C4C00D8B73A /* NSString+Secret.m */; };
 		1F83492B4B55BDCB2B97CE3F /* libPods-LSSampleInOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D6525A2969977C24DF82A1 /* libPods-LSSampleInOC.a */; };
+		9AE32EC404D3C07BAB2EB0FC /* libPods-LSSampleInOCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C82EF6B0DC4DA8B0C7517B82 /* libPods-LSSampleInOCTests.a */; };
 		CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */; };
 		CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */; };
+		CB4F9A331FC6C5AD009B2112 /* NSDate+FastTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4F9A321FC6C5AD009B2112 /* NSDate+FastTransform.m */; };
 		CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29971FBD6DA400964647 /* AppDelegate.m */; };
 		CB5F299E1FBD6DA400964647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5F299C1FBD6DA400964647 /* Main.storyboard */; };
 		CB5F29A11FBD6DA400964647 /* LSSampleInOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB5F299F1FBD6DA400964647 /* LSSampleInOC.xcdatamodeld */; };
@@ -35,12 +42,11 @@
 		CB5F29E11FBD72AD00964647 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29E01FBD72AD00964647 /* BaseModel.m */; };
 		CB5F29F01FBD76FD00964647 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29EF1FBD76FD00964647 /* BaseNavigationController.m */; };
 		CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29F21FBD771B00964647 /* BaseTabBarController.m */; };
-		CB5F29F61FBD784A00964647 /* Package+SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F29F51FBD784A00964647 /* Package+SVProgressHUD.m */; };
 		CB5F29FB1FBD7D5900964647 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F29FA1FBD7D4500964647 /* AssetsLibrary.framework */; };
 		CB5F29FD1FBD7D6500964647 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5F29FC1FBD7D5D00964647 /* AVFoundation.framework */; };
 		CB5F2A051FBD7FD700964647 /* LSSampleInOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F2A041FBD7FD700964647 /* LSSampleInOCTests.m */; };
 		CB5F2A131FBD7FE800964647 /* LSSampleInOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F2A121FBD7FE800964647 /* LSSampleInOCUITests.m */; };
-		CB5F2A1C1FBD80A500964647 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5F2A1A1FBD80A500964647 /* NSString+Verify.m */; };
+		D83E513623D61F08C97D9887 /* libPods-LSSampleInOCUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B71094CFC4D3F9EA1F441174 /* libPods-LSSampleInOCUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +67,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1894E9FD1FCEAAF700A4210F /* LSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSHelper.h; sourceTree = "<group>"; };
-		1894E9FE1FCEAAF700A4210F /* LSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSHelper.m; sourceTree = "<group>"; };
-		1894EA001FCEB48100A4210F /* MBProgressHUDPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDPackage.h; sourceTree = "<group>"; };
-		1894EA011FCEB48100A4210F /* MBProgressHUDPackage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDPackage.m; sourceTree = "<group>"; };
+		1832F86F1FCFB66A00AB9C27 /* NSString+Secret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Secret.h"; sourceTree = "<group>"; };
+		1832F8701FCFB66A00AB9C27 /* LSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHelper.m; sourceTree = "<group>"; };
+		1832F8711FCFB66A00AB9C27 /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
+		1832F8721FCFB66A00AB9C27 /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
+		1832F8731FCFB66A00AB9C27 /* LSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHelper.h; sourceTree = "<group>"; };
+		1832F8741FCFB66A00AB9C27 /* NSString+Secret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Secret.m"; sourceTree = "<group>"; };
+		1832F8781FCFB69200AB9C27 /* MBProgressHUDPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUDPackage.h; sourceTree = "<group>"; };
+		1832F8791FCFB69200AB9C27 /* MBProgressHUDPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUDPackage.m; sourceTree = "<group>"; };
+		1832F87A1FCFB69200AB9C27 /* SVProgressHUDPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDPackage.h; sourceTree = "<group>"; };
+		1832F87B1FCFB69200AB9C27 /* AFNPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNPackage.m; sourceTree = "<group>"; };
+		1832F87C1FCFB69200AB9C27 /* AFNPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNPackage.h; sourceTree = "<group>"; };
+		1832F87D1FCFB69200AB9C27 /* SVProgressHUDPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDPackage.m; sourceTree = "<group>"; };
+		1832F8821FCFB6DB00AB9C27 /* AFNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNViewController.h; sourceTree = "<group>"; };
+		1832F8831FCFB6DB00AB9C27 /* AFNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
+		1832F8891FCFF54500AB9C27 /* ProgressHUDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressHUDDemoController.h; sourceTree = "<group>"; };
+		1832F88A1FCFF54500AB9C27 /* ProgressHUDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDDemoController.m; sourceTree = "<group>"; };
 		18EC65B71FCD035300D8B73A /* CorePlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CorePlaceHolder.h; sourceTree = "<group>"; };
 		18EC65B81FCD035300D8B73A /* CorePlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorePlaceHolder.m; sourceTree = "<group>"; };
 		18EC65BA1FCD03C800D8B73A /* ViewModelsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelsPlaceHolder.h; sourceTree = "<group>"; };
@@ -87,8 +105,6 @@
 		18EC65D41FCD079400D8B73A /* BaseDemoNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDemoNavigationController.m; sourceTree = "<group>"; };
 		18EC65D61FCD07BD00D8B73A /* BaseDemoTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDemoTabbarController.h; sourceTree = "<group>"; };
 		18EC65D71FCD07BD00D8B73A /* BaseDemoTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDemoTabbarController.m; sourceTree = "<group>"; };
-		18EC65E31FCD5C4C00D8B73A /* NSString+Secret.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Secret.h"; sourceTree = "<group>"; };
-		18EC65E41FCD5C4C00D8B73A /* NSString+Secret.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Secret.m"; sourceTree = "<group>"; };
 		211BE4A87D2CCB9BB0192166 /* Pods-LSSampleInOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSampleInOCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSSampleInOCTests/Pods-LSSampleInOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		23940F10C4913A6626320D97 /* Pods-LSSampleInOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSampleInOCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSSampleInOCTests/Pods-LSSampleInOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		252A0A41A042ED65BAA6FAC6 /* Pods-LSSampleInOCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSampleInOCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSSampleInOCUITests/Pods-LSSampleInOCUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +118,9 @@
 		CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FileManager.m"; sourceTree = "<group>"; };
 		CB4780321FC3F5FB00EEED86 /* FileManagerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManagerVC.h; sourceTree = "<group>"; };
 		CB4780331FC3F5FC00EEED86 /* FileManagerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManagerVC.m; sourceTree = "<group>"; };
+		CB4F9A301FC6BFAE009B2112 /* UIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIMacro.h; sourceTree = "<group>"; };
+		CB4F9A311FC6C5AD009B2112 /* NSDate+FastTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FastTransform.h"; sourceTree = "<group>"; };
+		CB4F9A321FC6C5AD009B2112 /* NSDate+FastTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FastTransform.m"; sourceTree = "<group>"; };
 		CB5F29931FBD6DA400964647 /* LSSampleInOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSSampleInOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5F29961FBD6DA400964647 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB5F29971FBD6DA400964647 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,8 +144,6 @@
 		CB5F29EF1FBD76FD00964647 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		CB5F29F11FBD771B00964647 /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		CB5F29F21FBD771B00964647 /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
-		CB5F29F41FBD784A00964647 /* Package+SVProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Package+SVProgressHUD.h"; sourceTree = "<group>"; };
-		CB5F29F51FBD784A00964647 /* Package+SVProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Package+SVProgressHUD.m"; sourceTree = "<group>"; };
 		CB5F29FA1FBD7D4500964647 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		CB5F29FC1FBD7D5D00964647 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CB5F2A021FBD7FD700964647 /* LSSampleInOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSSampleInOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +152,6 @@
 		CB5F2A101FBD7FE800964647 /* LSSampleInOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSSampleInOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5F2A121FBD7FE800964647 /* LSSampleInOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSSampleInOCUITests.m; sourceTree = "<group>"; };
 		CB5F2A141FBD7FE800964647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB5F2A1A1FBD80A500964647 /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
-		CB5F2A1B1FBD80A500964647 /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE32EC404D3C07BAB2EB0FC /* libPods-LSSampleInOCTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,12 +177,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D83E513623D61F08C97D9887 /* libPods-LSSampleInOCUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1832F8811FCFB6B000AB9C27 /* AFNDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1832F8821FCFB6DB00AB9C27 /* AFNViewController.h */,
+				1832F8831FCFB6DB00AB9C27 /* AFNViewController.m */,
+			);
+			path = AFNDemo;
+			sourceTree = "<group>";
+		};
+		1832F8851FCFF4BF00AB9C27 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1832F8891FCFF54500AB9C27 /* ProgressHUDDemoController.h */,
+				1832F88A1FCFF54500AB9C27 /* ProgressHUDDemoController.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		18EC65CF1FCD073700D8B73A /* BaseDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +251,8 @@
 		CB5F29951FBD6DA400964647 /* LSSampleInOC */ = {
 			isa = PBXGroup;
 			children = (
+				1832F8851FCFF4BF00AB9C27 /* ProgressHUD */,
+				1832F8811FCFB6B000AB9C27 /* AFNDemo */,
 				18EC65CF1FCD073700D8B73A /* BaseDemo */,
 				CB34B1E81FC27BC4004B0673 /* String+FastCacheDemo */,
 				CB5F29CF1FBD6EDF00964647 /* SystemClasses */,
@@ -275,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5F29D81FBD721A00964647 /* AppMacro.h */,
+				CB4F9A301FC6BFAE009B2112 /* UIMacro.h */,
 				CB5F29D91FBD722A00964647 /* NotificationMacro.h */,
 				CB5F29DB1FBD727B00964647 /* UtilsMacro.h */,
 				CB5F29DA1FBD723F00964647 /* VendorMacro.h */,
@@ -300,12 +338,12 @@
 		CB5F29D41FBD6FD400964647 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				CB5F2A1B1FBD80A500964647 /* NSString+Verify.h */,
-				CB5F2A1A1FBD80A500964647 /* NSString+Verify.m */,
-				18EC65E31FCD5C4C00D8B73A /* NSString+Secret.h */,
-				18EC65E41FCD5C4C00D8B73A /* NSString+Secret.m */,
-				1894E9FD1FCEAAF700A4210F /* LSHelper.h */,
-				1894E9FE1FCEAAF700A4210F /* LSHelper.m */,
+				1832F8731FCFB66A00AB9C27 /* LSHelper.h */,
+				1832F8701FCFB66A00AB9C27 /* LSHelper.m */,
+				1832F86F1FCFB66A00AB9C27 /* NSString+Secret.h */,
+				1832F8741FCFB66A00AB9C27 /* NSString+Secret.m */,
+				1832F8711FCFB66A00AB9C27 /* NSString+Verify.h */,
+				1832F8721FCFB66A00AB9C27 /* NSString+Verify.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -315,6 +353,8 @@
 			children = (
 				CB34B2681FC2DA50004B0673 /* NSString+FileManager.h */,
 				CB34B2691FC2DA50004B0673 /* NSString+FileManager.m */,
+				CB4F9A311FC6C5AD009B2112 /* NSDate+FastTransform.h */,
+				CB4F9A321FC6C5AD009B2112 /* NSDate+FastTransform.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -405,10 +445,12 @@
 		CB5F29EC1FBD747800964647 /* Package */ = {
 			isa = PBXGroup;
 			children = (
-				CB5F29F41FBD784A00964647 /* Package+SVProgressHUD.h */,
-				CB5F29F51FBD784A00964647 /* Package+SVProgressHUD.m */,
-				1894EA001FCEB48100A4210F /* MBProgressHUDPackage.h */,
-				1894EA011FCEB48100A4210F /* MBProgressHUDPackage.m */,
+				1832F87C1FCFB69200AB9C27 /* AFNPackage.h */,
+				1832F87B1FCFB69200AB9C27 /* AFNPackage.m */,
+				1832F8781FCFB69200AB9C27 /* MBProgressHUDPackage.h */,
+				1832F8791FCFB69200AB9C27 /* MBProgressHUDPackage.m */,
+				1832F87A1FCFB69200AB9C27 /* SVProgressHUDPackage.h */,
+				1832F87D1FCFB69200AB9C27 /* SVProgressHUDPackage.m */,
 			);
 			path = Package;
 			sourceTree = "<group>";
@@ -492,9 +534,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5F2A091FBD7FD700964647 /* Build configuration list for PBXNativeTarget "LSSampleInOCTests" */;
 			buildPhases = (
+				28A65A99D4370CA2547B3B67 /* [CP] Check Pods Manifest.lock */,
 				CB5F29FE1FBD7FD700964647 /* Sources */,
 				CB5F29FF1FBD7FD700964647 /* Frameworks */,
 				CB5F2A001FBD7FD700964647 /* Resources */,
+				6B18D504C973E50F3500DEA2 /* [CP] Embed Pods Frameworks */,
+				B5F8E3B614EFC5F8996C860F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -510,9 +555,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5F2A171FBD7FE800964647 /* Build configuration list for PBXNativeTarget "LSSampleInOCUITests" */;
 			buildPhases = (
+				B820CF3565CA4D8C88D2FFD5 /* [CP] Check Pods Manifest.lock */,
 				CB5F2A0C1FBD7FE800964647 /* Sources */,
 				CB5F2A0D1FBD7FE800964647 /* Frameworks */,
 				CB5F2A0E1FBD7FE800964647 /* Resources */,
+				329D9717FB0409BC06C15022 /* [CP] Embed Pods Frameworks */,
+				CA6CC99F52BF8522C0BD9500 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -598,6 +646,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		28A65A99D4370CA2547B3B67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSSampleInOCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		308518C16A04FDE350597000 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,6 +677,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSSampleInOC/Pods-LSSampleInOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		329D9717FB0409BC06C15022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSSampleInOCUITests/Pods-LSSampleInOCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B18D504C973E50F3500DEA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSSampleInOCTests/Pods-LSSampleInOCTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5F8E3B614EFC5F8996C860F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSSampleInOCTests/Pods-LSSampleInOCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B820CF3565CA4D8C88D2FFD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSSampleInOCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD68B587595D3892BC2FD1C1 /* [CP] Copy Pods Resources */ = {
@@ -630,6 +759,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSSampleInOC/Pods-LSSampleInOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6CC99F52BF8522C0BD9500 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSSampleInOCUITests/Pods-LSSampleInOCUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE200DFAEBE9863225AE1E93 /* [CP] Check Pods Manifest.lock */ = {
@@ -661,26 +805,30 @@
 				18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */,
 				CB5F29E11FBD72AD00964647 /* BaseModel.m in Sources */,
 				CB5F29F01FBD76FD00964647 /* BaseNavigationController.m in Sources */,
+				1832F87F1FCFB69200AB9C27 /* AFNPackage.m in Sources */,
 				18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */,
 				CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */,
+				1832F8771FCFB66A00AB9C27 /* NSString+Secret.m in Sources */,
+				1832F8841FCFB6DB00AB9C27 /* AFNViewController.m in Sources */,
+				1832F8751FCFB66A00AB9C27 /* LSHelper.m in Sources */,
+				1832F8801FCFB69200AB9C27 /* SVProgressHUDPackage.m in Sources */,
 				18EC65D81FCD07BD00D8B73A /* BaseDemoTabbarController.m in Sources */,
 				CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */,
 				18EC65CB1FCD042500D8B73A /* ImagesPlaceHolder.m in Sources */,
 				18EC65B91FCD035300D8B73A /* CorePlaceHolder.m in Sources */,
-				1894EA021FCEB48100A4210F /* MBProgressHUDPackage.m in Sources */,
-				CB5F29F61FBD784A00964647 /* Package+SVProgressHUD.m in Sources */,
+				1832F8761FCFB66A00AB9C27 /* NSString+Verify.m in Sources */,
 				18EC65C51FCD040400D8B73A /* SoundsPlaceHolder.m in Sources */,
+				CB4F9A331FC6C5AD009B2112 /* NSDate+FastTransform.m in Sources */,
 				CB5F29DE1FBD729500964647 /* BaseViewController.m in Sources */,
+				1832F87E1FCFB69200AB9C27 /* MBProgressHUDPackage.m in Sources */,
 				CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */,
 				18EC65D51FCD079400D8B73A /* BaseDemoNavigationController.m in Sources */,
-				CB5F2A1C1FBD80A500964647 /* NSString+Verify.m in Sources */,
 				18EC65C21FCD03EF00D8B73A /* VideosPlaceHolder.m in Sources */,
 				18EC65D21FCD076800D8B73A /* BaseDemoViewController.m in Sources */,
 				CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */,
 				CB5F29A91FBD6DA400964647 /* main.m in Sources */,
 				CB5F29A11FBD6DA400964647 /* LSSampleInOC.xcdatamodeld in Sources */,
-				1894E9FF1FCEAAF700A4210F /* LSHelper.m in Sources */,
-				18EC65E51FCD5C4C00D8B73A /* NSString+Secret.m in Sources */,
+				1832F88B1FCFF54500AB9C27 /* ProgressHUDDemoController.m in Sources */,
 				18EC65CE1FCD043000D8B73A /* VendorsCodePlaceHolder.m in Sources */,
 				CB5F29CE1FBD6E6300964647 /* TableViewController.m in Sources */,
 			);
@@ -880,6 +1028,7 @@
 		};
 		CB5F2A0A1FBD7FD700964647 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 211BE4A87D2CCB9BB0192166 /* Pods-LSSampleInOCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -895,6 +1044,7 @@
 		};
 		CB5F2A0B1FBD7FD700964647 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23940F10C4913A6626320D97 /* Pods-LSSampleInOCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -910,6 +1060,7 @@
 		};
 		CB5F2A181FBD7FE800964647 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252A0A41A042ED65BAA6FAC6 /* Pods-LSSampleInOCUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VYD78586B;
@@ -924,6 +1075,7 @@
 		};
 		CB5F2A191FBD7FE800964647 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B353ABC1176C7DCB6CDBD8 /* Pods-LSSampleInOCUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8VYD78586B;

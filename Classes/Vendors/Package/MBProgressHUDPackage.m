@@ -9,7 +9,7 @@
 #import "MBProgressHUDPackage.h"
 #import "AppMacro.h"
 #import <UIKit/UIKit.h>
-
+#import "NSString+Verify.h"
 typedef NS_ENUM(NSInteger,MBProgressTipType)
 {
     MBProgressTipSuccess,
@@ -171,7 +171,7 @@ typedef NS_ENUM(NSInteger,HttpStatusCode)
                 NSString *description = [NSHTTPURLResponse localizedStringForStatusCode:resp.statusCode];
                 [self handleErrorWithCode:resp.statusCode additional:description];
             }else{
-                [self handleNetWorkConnectError];
+                
             }
         }
             break;
@@ -188,48 +188,34 @@ typedef NS_ENUM(NSInteger,HttpStatusCode)
     }
 }
 
-+ (void)handleNetWorkConnectError
-{
-    [MBProgressHUD ];
-    if ([GlobalCache sharedInstance].intenetReachable) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:ServerRequestFailure
-                                                            object:@(RequestFailedError)];
-    }else{
-        [[NSNotificationCenter defaultCenter] postNotificationName:ServerRequestFailure
-                                                            object:@(NoConnectionError)];
-    }
-}
-
 #pragma mark 私有方法：显示信息，然后自动隐藏
 + (void)show:(NSString *)text  type:(MBProgressTipType)type
 {
-    if (![StringTools isEmpty:text]) {
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:NO];
-        hud.mode = MBProgressHUDModeCustomView;
-        switch (type) {
-            case MBProgressTipSuccess:
-                hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageWithNamed:@"Checkmark-success"]];
-                break;
-            case MBProgressTipError:
-                hud.customView = [[UIImageView alloc] initWithImage:[UIImage imageWithNamed:@"Checkmark-error"]];
-                break;
-        }
-        hud.color = GRAYCOLOR(200);
-        hud.detailsLabelText = text;
-        hud.detailsLabelColor = FSBlackColor;
-        hud.removeFromSuperViewOnHide = YES;
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
-            sleep(1.0);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [UIView animateWithDuration:0.3 animations:^{
-                    hud.transform = CGAffineTransformMakeScale(0.8, 0.8);
-                } completion:^(BOOL finished) {
-                    hud.minShowTime = 1.7;
-                    [hud hide:YES];
-                }];
-            });
-        });
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:NO];
+    hud.mode = MBProgressHUDModeCustomView;
+    switch (type) {
+        case MBProgressTipSuccess:
+            hud.customView = [[UIImageView alloc] initWithImage:IMAGE_NAMED(@"Checkmark-success")];
+            break;
+        case MBProgressTipError:
+            hud.customView = [[UIImageView alloc] initWithImage:IMAGE_NAMED(@"Checkmark-error")];
+            break;
     }
+    hud.bezelView.color = RGB(200, 200, 200);
+    hud.detailsLabel.text = text;
+    hud.detailsLabel.textColor = CC_BLACK;
+    hud.removeFromSuperViewOnHide = YES;
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+        sleep(1.0);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [UIView animateWithDuration:0.3 animations:^{
+                hud.transform = CGAffineTransformMakeScale(0.8, 0.8);
+            } completion:^(BOOL finished) {
+                hud.minShowTime = 1.7;
+                [hud hideAnimated:YES];
+            }];
+        });
+    });
 }
 
 

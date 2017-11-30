@@ -25,8 +25,9 @@
     });\
     return instance;\
 }
+
 /**
- 
+    tableViewCell黑线顶格
  */
 #define setTableViewSeparatorZeroMargin(TABLEVIEW_OR_CELL) \
 if ([TABLEVIEW_OR_CELL respondsToSelector:@selector(setSeparatorInset:)]){\
@@ -70,5 +71,6 @@ if ([TABLEVIEW_OR_CELL respondsToSelector:@selector(setLayoutMargins:)]){\
 #if TARGET_IPHONE_SIMULATOR
 //iPhone Simulator
 #endif
+
 
 #endif /* UtilsMacro_h */

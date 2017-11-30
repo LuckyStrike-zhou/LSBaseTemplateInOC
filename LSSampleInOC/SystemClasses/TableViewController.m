@@ -11,6 +11,8 @@
 #import "BaseDemoViewController.h"
 #import "BaseDemoTabbarController.h"
 #import "BaseDemoNavigationController.h"
+#import "AFNViewController.h"
+#import "ProgressHUDDemoController.h"
 
 @interface TableViewController ()
 
@@ -23,7 +25,7 @@
 
 - (NSArray *)modulesArr{
     if (!_modulesArr) {
-        _modulesArr = @[@"FastCache",@"BaseDemo"];
+        _modulesArr = @[@"FastCache",@"BaseDemo",@"AFNPackage",@"ProgressHUD"];
     }
     return _modulesArr;
 }
@@ -77,7 +79,7 @@
         FileManagerVC *vc = [[FileManagerVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 1){
-        
+
         NSString *title = self.modulesArr[indexPath.row];
         
         BaseDemoViewController *baseVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"BaseDemoVC"];
@@ -89,9 +91,15 @@
         baseTVC.viewControllers = @[baseNVC,[[BaseViewController alloc] init],[[BaseViewController alloc] init]];
         
         [self.navigationController pushViewController:baseTVC animated:YES];
+    }else if(indexPath.row == 2){
+        AFNViewController *vc = [[AFNViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 3){
         
+        ProgressHUDDemoController *vc = [[ProgressHUDDemoController alloc] init];
+        vc.title = @"ProgressHUD";
+        [self.navigationController pushViewController:vc animated:YES];
     }
-    
 }
 
 /*

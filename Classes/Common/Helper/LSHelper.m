@@ -2,7 +2,7 @@
 //  LSHelper.m
 //  LSSampleInOC
 //
-//  Created by Apple on 2017/11/29.
+//  Created by LuckyStrike on 2017/11/22.
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
     int val;
     return[scan scanInt:&val] && [scan isAtEnd];
 }
+
 //判断是否为浮点形：
 + (BOOL)isPureFloat:(NSString*)string{
     NSScanner* scan = [NSScanner scannerWithString:string];
@@ -23,8 +24,17 @@
     return[scan scanFloat:&val] && [scan isAtEnd];
 }
 
++ (NSString *)paramentStringFromDic:(NSDictionary *)dic {
+    NSMutableString *paramsString = [NSMutableString stringWithString:@"?"];
+    [dic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        [paramsString appendFormat:@"%@=%@&",key,obj];
+    }];
+    [paramsString deleteCharactersInRange:NSMakeRange(paramsString.length-1, 1)];
+    return paramsString;
+}
+
 + (NSString *)mimeTypeByGuessingFromData:(NSData *)data {
-    
+
     char bytes[12] = {0};
     [data getBytes:&bytes length:12];
     

@@ -21,5 +21,9 @@
  验证身份证号码
  */
 - (BOOL)verifyIdentityCardNum;
+/**
+ 判断字符串是否为空
+ */
+- (BOOL)isEmpty;
 
 @end

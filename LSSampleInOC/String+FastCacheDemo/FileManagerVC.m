@@ -8,7 +8,6 @@
 
 #import "FileManagerVC.h"
 #import "AppMacro.h"
-#import "UtilsMacro.h"
 #import "NSString+FileManager.h"
 
 @interface FileManagerVC ()

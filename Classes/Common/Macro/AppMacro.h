@@ -9,6 +9,14 @@
 #ifndef AppMacro_h
 #define AppMacro_h
 
+#import "UIMacro.h"
+#import "NotificationMacro.h"
+#import "UtilsMacro.h"
+#import "VendorMacro.h"
+
+/**
+    测试开关
+ */
 #define DEBUG  1
 
 /**********************************************
@@ -27,37 +35,6 @@
 #endif
 
 /**********************************************
-                    Frame
- ********************************************** */
-
-#define Frame_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-
-// 获取屏幕 宽度、高度 bounds就是屏幕的全部区域
-#define FrameSCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
-#define FrameSCREEN_HEIGHT   ([UIScreen mainScreen].bounds.size.height)
-// View 坐标(x,y)和宽高(width,height)
-#define FrameX(v)                    (v).frame.origin.x
-#define FrameY(v)                    (v).frame.origin.y
-#define FrameWidth(v)                (v).frame.size.width
-#define FrameHeight(v)               (v).frame.size.height
-
-#define FrameMinX(v)                 CGRectGetMinX((v).frame)
-#define FrameMinY(v)                 CGRectGetMinY((v).frame)
-
-#define FrameMidX(v)                 CGRectGetMidX((v).frame)
-#define FrameMidY(v)                 CGRectGetMidY((v).frame)
-
-#define FrameMaxX(v)                 CGRectGetMaxX((v).frame)
-#define FrameMaxY(v)                 CGRectGetMaxY((v).frame)
-
-#define Frame_CHANGE_X(v,x)          CGRectMake(x, Y(v), WIDTH(v), HEIGHT(v))
-#define Frame_CHANGE_Y(v,y)          CGRectMake(X(v), y, WIDTH(v), HEIGHT(v))
-#define Frame_CHANGE_Point(v,x,y)    CGRectMake(x, y, WIDTH(v), HEIGHT(v))
-#define Frame_CHANGE_Width(v,w)      CGRectMake(X(v), Y(v), w, HEIGHT(v))
-#define Frame_CHANGE_Height(v,h)     CGRectMake(X(v), Y(v), WIDTH(v), h)
-#define Frame_CHANGE_Size(v,w,h)     CGRectMake(X(v), Y(v), w, h)
-
-/**********************************************
                     版本适配
  ********************************************** */
 
@@ -68,6 +45,8 @@
 #define IOS_9  ([[UIDevice currentDevice].systemVersion floatValue]) >= 9.0 ? YES : NO
 #define IOS_10 @available(iOS 10.0, *)
 #define IOS_11 @available(iOS 11.0, *)
+
+#define IOS10 __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 
 /**********************************************
                     类别简写
@@ -100,51 +79,6 @@
 #define IMAGE_NAMED(imgName) [UIImage imageNamed:imgName]
 
 /**********************************************
-                        字体
- ********************************************** */
-
-#define F_BOLD(FONTSIZE)     [UIFont boldSystemFontOfSize:FONTSIZE]
-#define F_NORMAL(FONTSIZE)   [UIFont systemFontOfSize:FONTSIZE]
-#define F_FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
-//正常字体
-#define F_H(SIZE)     [UIFont systemFontOfSize:SIZE]
-//粗体
-#define F_HB(SIZE)    [UIFont boldSystemFontOfSize:SIZE]
-
-/**********************************************
-                    颜色
- ********************************************** */
-
-#define RGB(r,g,b)      [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
-#define RGBA(r,g,b,a)   [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
-
-///常用颜色
-#define C_BLACK     [UIColor blackColor]
-#define C_BLUE      [UIColor blueColor]
-#define C_BROWN     [UIColor brownColor]
-#define C_CLEAR     [UIColor clearColor]
-#define C_DARKGRAY  [UIColor darkGrayColor]
-#define C_WHITE     [UIColor whiteColor]
-#define C_YELLOW    [UIColor yellowColor]
-#define C_RED       [UIColor redColor]
-#define C_ORANGE    [UIColor orangeColor]
-#define C_PURPLE    [UIColor purpleColor]
-#define C_LIGHTGRAY [UIColor lightGrayColor]
-#define C_GREEN     [UIColor greenColor]
-#define C_GRAY      [UIColor grayColor]
-#define C_MAGENTA   [UIColor magentaColor]
-
-#define C_BGCOLOR RGBA(234, 234, 234, 1)
-
-#define C_TEXT_COLOR RGBA(109, 109, 109, 1)
-
-#define C_LINE_COLOR RGBA(135, 135, 135, 1)
-
-#define C_LIGHT_LINE_COLOR RGBA(174, 174, 174, 1)
-
-#define C_BLACK_TEXT_COLOR RGBA(38, 38, 38, 1)
-
-/**********************************************
                     设备信息
  ********************************************** */
 
@@ -159,7 +93,7 @@
 #define APP_VERSION      [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 /**********************************************
-            国际化
+                    国际化
  ********************************************** */
 
 #define APP_NAME CFBundleDisplayName
@@ -170,17 +104,11 @@
 #define CustomLocalString(x, ...)  NSLocalizedStringFromTable(x, @"someName", nil)
 
 /**********************************************
-                        时间
+                    时间
  ********************************************** */
 
 /** 时间间隔 */
 #define Duration_ONE            (1.f)
 
-/**********************************************
-                        固定参数
- ********************************************** */
-
-#define kEnglishKeyboardHeight  (216.f)
-#define kChineseKeyboardHeight  (252.f)
 
 #endif /* AppMacro_h */

@@ -8,10 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSString (Secret)
 
-- (NSString *)md5;
+/**
+    AES Base64 DES
+ */
 
+/**
+ md5加密
+ */
+- (NSString *)md5;
+/**
+ 加码解码
+ */
 - (NSString *)URLEncodedString;
 - (NSString *)URLDecodedString;
 

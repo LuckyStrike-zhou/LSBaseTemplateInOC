@@ -1,72 +1,67 @@
 //
-//  AFNHelper.m
-//  LSSampleInOC
+//  AFNPackage.m
+//  YEXClient
 //
-//  Created by LuckyStrike on 2017/11/21.
-//  Copyright © 2017年 LuckyStrike. All rights reserved.
+//  Created by Apple on 2017/12/7.
+//  Copyright © 2017年 LYKM. All rights reserved.
 //
 
 #import "AFNPackage.h"
 #import <AFNetworking/AFNetworking.h>
-#import "NSString+Verify.h"
 
 @implementation AFNPackage
 
-+ (AFHTTPSessionManager*)createManager{
-    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
-    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    return manager;
-}
-
-+ (void)GetWithURL:(NSString*)url paraments:(id)para progress:(progressBlock)pBlock complate:(complateBlock)cBlock{
-
-    [[AFNPackage createManager] GET:url parameters:para progress:pBlock success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        cBlock(responseObject,nil);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        cBlock(nil,error);
-    }];
-}
-
-+ (void)PostWithURL:(NSString*)url paraments:(id)para progress:(progressBlock)pBlock complate:(complateBlock)cBlock{
-
-    [[AFNPackage createManager] POST:url parameters:para progress:pBlock success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        cBlock(responseObject,nil);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        cBlock(nil,error);
-    }];
-}
-
-+ (void)UploadWithURL:(NSString*)url paraments:(id)para data:(NSData*)data name:(NSString*)name mimeType:(NSString*)mimeType progress:(progressBlock)pBlock complate:(complateBlock)cBlock{
-    
-    [[AFNPackage createManager] POST:url parameters:para constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        [formData appendPartWithFileData:data name:name fileName:[NSString stringWithFormat:@"%@.jpeg",name] mimeType:mimeType];
-    } progress:pBlock success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        cBlock(responseObject,nil);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        cBlock(nil,error);
-    }];
-}
-
-#pragma mark --数据处理
-+ (void)handleResponse:(id)responseObject completion:(complateBlock)completion;
++ (void)requestWithMethod:(RequestMethod)requestMethod andUrlString:(NSString *)urlString andParameters:(id) parameters andFinished:(void(^)(id response, NSError *error))responseBlock
 {
-    @try{
-        if([responseObject isKindOfClass:[NSData class]]){
-            NSString *originString = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-            if (originString && [NSJSONSerialization isValidJSONObject:originString]) {
-                responseObject = [NSJSONSerialization JSONObjectWithData:[originString dataUsingEncoding:NSUTF8StringEncoding]
-                                                                 options:NSJSONReadingMutableLeaves
-                                                                   error:nil];
-            }
-            if (![originString isEmpty]) {
-                responseObject = originString;
-            }
-        }
-        completion(responseObject,nil);
-       
-    }@catch(NSException *excep){
-        NSLog(@"%@",excep.reason);
+    // 定义成功的block
+    void (^sucBlock)(NSURLSessionDataTask *dataTask, id responseObject) = ^(NSURLSessionDataTask *dataTask,id responseObject)
+    {
+        responseBlock(responseObject, nil);
+    };
+    // 定义失败的block
+    void (^failBlock)(NSURLSessionDataTask *dataTask,NSError *error) = ^(NSURLSessionDataTask *dataTask,NSError *error)
+    {
+        responseBlock(nil, error);
+    };
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/xml", @"text/plain; charset=utf-8", nil];
+    
+    if (requestMethod == RequestMethodGet) {
+        [manager GET:urlString parameters:parameters progress:nil success:sucBlock failure:failBlock];
+    } else {
+        [manager POST:urlString parameters:parameters progress:nil success:sucBlock failure:failBlock];
     }
 }
+
++ (void)updateWithUrlString:(NSString *)urlString andParameters:(id)parameters andData:(NSData*)data andName:(NSString *)name andFinished:(void(^)(id response, NSError *error))responseBlock
+{
+    void (^sucBlock)(NSURLSessionDataTask *dataTask, id responseObject) = ^(NSURLSessionDataTask *dataTask,id responseObject)
+    {
+        NSError *err = nil;
+        id resp = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:&err];
+        responseBlock(resp, err);
+    };
+    void (^failBlock)(NSURLSessionDataTask *dataTask,NSError *error) = ^(NSURLSessionDataTask *dataTask,NSError *error)
+    {
+        responseBlock(nil, error);
+    };
+    
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    [manager POST:urlString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        //fileName添加时间
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        formatter.dateFormat = @"yyyyMMddHHmmss";
+        NSString *str = [formatter stringFromDate:[NSDate date]];
+        NSString *fileName = [NSString stringWithFormat:@"%@_%@.png",name,str];
+        
+        [formData appendPartWithFileData:data name:name fileName:fileName mimeType:@"image/png"];//@"application/octet-stream"
+        
+    } progress:nil success:sucBlock failure:failBlock];
+}
+
 @end

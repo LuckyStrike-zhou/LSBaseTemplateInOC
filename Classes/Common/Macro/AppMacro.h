@@ -59,7 +59,6 @@
 #define URL(url) [NSURL URLWithString:url]
 
 #define S_Append(str1,str2) [NSString stringWithFormat:@"%@%@",str1,str2]
-#define S_ParaStr           [NSString stringWithFormat:@"%@=%@&",str1,str2]
 #define S_Int(i)            [NSString stringWithFormat:@"%d",i]
 #define S_Float(f)          [NSString stringWithFormat:@"%f",f]
 
@@ -77,6 +76,7 @@
 #define IMAGE(NAME, EXT)        [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]]
 
 #define IMAGE_NAMED(imgName) [UIImage imageNamed:imgName]
+#define IMAGE_CONTENTS_FILE(imgName) [UIImage imageWithContentsOfFile:imgName]
 
 /**********************************************
                     设备信息

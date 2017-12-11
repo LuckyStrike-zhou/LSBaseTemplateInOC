@@ -20,14 +20,9 @@
     
     
 }
-- (IBAction)changeStatus:(id)sender {
-    [self changeStatusBarStyle:UIStatusBarStyleLightContent statusBarHidden:YES changeStatusBarAnimated:YES];
-}
-- (IBAction)changeExtend:(id)sender {
-    [self setIsExtendLayout:YES];
-}
+
 - (IBAction)removeNavLine:(id)sender {
-    [self removeNavgationBarLine];
+    [self removeNavgationLine:YES];
 }
 
 - (void)didReceiveMemoryWarning {

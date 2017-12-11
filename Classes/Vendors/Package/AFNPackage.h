@@ -1,33 +1,38 @@
 //
 //  AFNPackage.h
-//  LSSampleInOC
+//  YEXClient
 //
-//  Created by LuckyStrike on 2017/11/21.
-//  Copyright © 2017年 LuckyStrike. All rights reserved.
+//  Created by Apple on 2017/12/7.
+//  Copyright © 2017年 LYKM. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
+typedef enum : NSInteger {
+    RequestMethodGet,
+    RequestMethodPost
+} RequestMethod;
 
-typedef void(^progressBlock)(NSProgress *progress);
-typedef void(^complateBlock)(id response,NSError *error);
 
 @interface AFNPackage : NSObject
+
 /**
- GET
+ * requestMethod:请求方式
+ * urlString:请求地址
+ * parameters:请求参数
+ * responseBlock:请求成功或失败的回调
  */
-+ (void)GetWithURL:(NSString*)url paraments:(id)para progress:(progressBlock)pBlock complate:(complateBlock)cBlock;
+
++ (void)requestWithMethod:(RequestMethod)requestMethod andUrlString:(NSString *)urlString andParameters:(id) parameters andFinished:(void(^)(id response, NSError *error))responseBlock;
+
 /**
- POST
+ * urlString:请求地址
+ * parameters:请求参数
+ * data:上传资料
+ * name:上传资料的名字
+ * responseBlock:请求成功或失败的回调
  */
-+ (void)PostWithURL:(NSString*)url paraments:(id)para progress:(progressBlock)pBlock complate:(complateBlock)cBlock;
-/**
- UPLOAD
- */
-+ (void)UploadWithURL:(NSString*)url paraments:(id)para data:(NSData*)data name:(NSString*)name mimeType:(NSString*)mimeType progress:(progressBlock)pBlock complate:(complateBlock)cBlock;
-/**
- 数据处理
- */
-+ (void)handleResponse:(id)responseObject completion:(complateBlock)completion;
+
++ (void)updateWithUrlString:(NSString *)urlString andParameters:(id)parameters andData:(NSData*)data andName:(NSString *)name andFinished:(void(^)(id response, NSError *error))responseBlock;
 
 @end

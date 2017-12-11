@@ -26,42 +26,6 @@
     return instance;\
 }
 
-/**
-    tableViewCell黑线顶格
- */
-#define setTableViewSeparatorZeroMargin(TABLEVIEW_OR_CELL) \
-if ([TABLEVIEW_OR_CELL respondsToSelector:@selector(setSeparatorInset:)]){\
-    [TABLEVIEW_OR_CELL setSeparatorInset:UIEdgeInsetsZero];\
-}\
-if ([TABLEVIEW_OR_CELL respondsToSelector:@selector(setLayoutMargins:)]){\
-    [TABLEVIEW_OR_CELL setLayoutMargins:UIEdgeInsetsZero];\
-}
-
-/**
-    圆角和加边框
- */
-#define ViewBorderRadius(View, Radius, Width, Color)\
-\
-[View.layer setCornerRadius:(Radius)];\
-[View.layer setMasksToBounds:YES];\
-[View.layer setBorderWidth:(Width)];\
-[View.layer setBorderColor:[Color CGColor]]
-
-/**
-    圆角
- */
-#define ViewRadius(View, Radius)\
-\
-[View.layer setCornerRadius:(Radius)];\
-[View.layer setMasksToBounds:YES]
-
-/**
-    view Tag
- */
-#define ViewTag(View, Tag)\
-\
-[View viewWithTag : Tag]
-
 #pragma mark - iPhone设备使用的编译
 #if TARGET_OS_IPHONE
 //iPhone Device

@@ -1,0 +1,26 @@
+//
+//  GlobalPCH.pch
+//  LSSampleInOC
+//
+//  Created by Apple on 2017/12/11.
+//  Copyright © 2017年 LuckyStrike. All rights reserved.
+//
+
+#ifndef GlobalPCH_pch
+#define GlobalPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AppMacro.h"
+#import "NotificationMacro.h"
+#import "UIMacro.h"
+#import "UtilsMacro.h"
+#import "VendorMacro.h"
+#import "API.h"
+/** UI  */
+#import "UIView+UI.h"
+
+
+
+#endif /* GlobalPCH_pch */

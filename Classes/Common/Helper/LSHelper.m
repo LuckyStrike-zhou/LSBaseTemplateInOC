@@ -79,4 +79,35 @@
     
 }
 
++ (UIImage *)createImageWithColor:(UIColor *)color
+{
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return theImage;
+}
+
+/**判断是否是第一次启动*/
++ (BOOL)isFirstLaunching
+{
+    BOOL firstLaunching = false;
+    
+    NSString *lastAppVersion =  [[NSUserDefaults standardUserDefaults] valueForKey:@"LastAppVersion"];
+    NSString *currentAppVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    
+    if ([lastAppVersion floatValue] < [currentAppVersion floatValue])
+    {
+        [[NSUserDefaults standardUserDefaults] setValue:currentAppVersion forKey:@"LastAppVersion"];
+        firstLaunching = true;
+    }
+    
+    return firstLaunching;
+}
+
+
 @end

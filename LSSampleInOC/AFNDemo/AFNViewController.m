@@ -11,7 +11,7 @@
 #import "LSHelper.h"
 #import "AppMacro.h"
 
-static NSString *const TEST_API = @"https://httpbin.org";
+static NSString *const TEST_API = @"https://httpbin.org/get";
 
 @interface AFNViewController ()
 
@@ -25,14 +25,10 @@ static NSString *const TEST_API = @"https://httpbin.org";
 
     self.view.backgroundColor = C_WHITE;
     
-    NSDictionary *testDic = @{@"name":@"zhangsan",@"年龄":@25,@"sex":@"man"};
+    NSDictionary *testDic = @{@"name":@"zhangsan",@"age":@"25",@"sex":@"man"};
     
-    [AFNPackage GetWithURL:TEST_API paraments:testDic progress:nil complate:^(id response, NSError *error) {
-        if (error) {
-            NSLog(@"%@", error);
-        }else{
-            NSLog(@"%@", ((NSDictionary*)response).description);
-        }
+    [AFNPackage requestWithMethod:RequestMethodGet andUrlString:TEST_API andParameters:testDic andFinished:^(id response, NSError *error) {
+        NSLog(@"%@",response);
     }];
     
     

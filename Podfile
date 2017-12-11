@@ -24,5 +24,6 @@ pod 'SVProgressHUD'
 pod 'MBProgressHUD'
 pod 'MJExtension'
 pod 'FMDB'
+pod 'ReactiveCocoa' ,'2.5'
 
 end

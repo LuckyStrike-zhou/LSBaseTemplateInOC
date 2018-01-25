@@ -18,9 +18,10 @@
 		1832F8751FCFB66A00AB9C27 /* LSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8701FCFB66A00AB9C27 /* LSHelper.m */; };
 		1832F8761FCFB66A00AB9C27 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8721FCFB66A00AB9C27 /* NSString+Verify.m */; };
 		1832F8771FCFB66A00AB9C27 /* NSString+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8741FCFB66A00AB9C27 /* NSString+Secret.m */; };
-		1832F8801FCFB69200AB9C27 /* SVProgressHUDPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F87D1FCFB69200AB9C27 /* SVProgressHUDPackage.m */; };
 		1832F8841FCFB6DB00AB9C27 /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8831FCFB6DB00AB9C27 /* AFNViewController.m */; };
 		1832F88B1FCFF54500AB9C27 /* ProgressHUDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F88A1FCFF54500AB9C27 /* ProgressHUDDemoController.m */; };
+		1855634620185B0B00E10CD9 /* LSCustomHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1855634520185B0B00E10CD9 /* LSCustomHUD.bundle */; };
+		1855634920185CD000E10CD9 /* LSCustomHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1855634820185CD000E10CD9 /* LSCustomHUD.m */; };
 		18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */; };
 		18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */; };
 		18EC65C21FCD03EF00D8B73A /* VideosPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65C11FCD03EF00D8B73A /* VideosPlaceHolder.m */; };
@@ -95,12 +96,13 @@
 		1832F8721FCFB66A00AB9C27 /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
 		1832F8731FCFB66A00AB9C27 /* LSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHelper.h; sourceTree = "<group>"; };
 		1832F8741FCFB66A00AB9C27 /* NSString+Secret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Secret.m"; sourceTree = "<group>"; };
-		1832F87A1FCFB69200AB9C27 /* SVProgressHUDPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDPackage.h; sourceTree = "<group>"; };
-		1832F87D1FCFB69200AB9C27 /* SVProgressHUDPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUDPackage.m; sourceTree = "<group>"; };
 		1832F8821FCFB6DB00AB9C27 /* AFNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNViewController.h; sourceTree = "<group>"; };
 		1832F8831FCFB6DB00AB9C27 /* AFNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
 		1832F8891FCFF54500AB9C27 /* ProgressHUDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressHUDDemoController.h; sourceTree = "<group>"; };
 		1832F88A1FCFF54500AB9C27 /* ProgressHUDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDDemoController.m; sourceTree = "<group>"; };
+		1855634520185B0B00E10CD9 /* LSCustomHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LSCustomHUD.bundle; sourceTree = "<group>"; };
+		1855634720185CD000E10CD9 /* LSCustomHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSCustomHUD.h; sourceTree = "<group>"; };
+		1855634820185CD000E10CD9 /* LSCustomHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSCustomHUD.m; sourceTree = "<group>"; };
 		18EC65BA1FCD03C800D8B73A /* ViewModelsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelsPlaceHolder.h; sourceTree = "<group>"; };
 		18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModelsPlaceHolder.m; sourceTree = "<group>"; };
 		18EC65BD1FCD03D900D8B73A /* ViewsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewsPlaceHolder.h; sourceTree = "<group>"; };
@@ -422,6 +424,7 @@
 		CB5F29E71FBD73F700964647 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1855634520185B0B00E10CD9 /* LSCustomHUD.bundle */,
 				CB5F29EB1FBD743300964647 /* Videos */,
 				CB5F29EA1FBD742B00964647 /* Sounds */,
 				CB5F29E91FBD741D00964647 /* Fonts */,
@@ -471,10 +474,10 @@
 			children = (
 				1821E6111FDE7BB9007B90A5 /* AFNPackage.h */,
 				1821E6101FDE7BB9007B90A5 /* AFNPackage.m */,
+				1855634720185CD000E10CD9 /* LSCustomHUD.h */,
+				1855634820185CD000E10CD9 /* LSCustomHUD.m */,
 				1821E6141FDE7BDC007B90A5 /* MBProgressHUD+Show.h */,
 				1821E6131FDE7BDC007B90A5 /* MBProgressHUD+Show.m */,
-				1832F87A1FCFB69200AB9C27 /* SVProgressHUDPackage.h */,
-				1832F87D1FCFB69200AB9C27 /* SVProgressHUDPackage.m */,
 			);
 			path = Package;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB5F29A61FBD6DA400964647 /* LaunchScreen.storyboard in Resources */,
+				1855634620185B0B00E10CD9 /* LSCustomHUD.bundle in Resources */,
 				CB5F29A31FBD6DA400964647 /* Assets.xcassets in Resources */,
 				CB5F299E1FBD6DA400964647 /* Main.storyboard in Resources */,
 			);
@@ -836,7 +840,6 @@
 				1832F8771FCFB66A00AB9C27 /* NSString+Secret.m in Sources */,
 				1832F8841FCFB6DB00AB9C27 /* AFNViewController.m in Sources */,
 				1832F8751FCFB66A00AB9C27 /* LSHelper.m in Sources */,
-				1832F8801FCFB69200AB9C27 /* SVProgressHUDPackage.m in Sources */,
 				18EC65D81FCD07BD00D8B73A /* BaseDemoTabbarController.m in Sources */,
 				1821E5F51FDE61B4007B90A5 /* AppDelegate+AppService.m in Sources */,
 				CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */,
@@ -851,6 +854,7 @@
 				18EC65D51FCD079400D8B73A /* BaseDemoNavigationController.m in Sources */,
 				18EC65C21FCD03EF00D8B73A /* VideosPlaceHolder.m in Sources */,
 				1821E5F81FDE636F007B90A5 /* BaseViewModel.m in Sources */,
+				1855634920185CD000E10CD9 /* LSCustomHUD.m in Sources */,
 				18EC65D21FCD076800D8B73A /* BaseDemoViewController.m in Sources */,
 				CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */,
 				CB5F29A91FBD6DA400964647 /* main.m in Sources */,

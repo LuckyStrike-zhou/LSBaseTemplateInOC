@@ -6,8 +6,8 @@
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
-#import "BaseNavigationController.h"
+#import "LSBaseNavigationController.h"
 
-@interface BaseDemoNavigationController : BaseNavigationController
+@interface BaseDemoNavigationController : LSBaseNavigationController
 
 @end

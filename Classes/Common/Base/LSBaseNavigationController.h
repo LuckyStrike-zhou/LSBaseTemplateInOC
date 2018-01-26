@@ -1,5 +1,5 @@
 //
-//  BaseNavigationController.h
+//  LSBaseNavigationController.h
 //  LSSampleInOC
 //
 //  Created by LuckyStrike on 2017/11/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseNavigationController : UINavigationController
+@interface LSBaseNavigationController : UINavigationController
 
 @end

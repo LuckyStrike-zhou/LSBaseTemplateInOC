@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger,MBProgressTipType)
     switch (type) {
         case MBProgressTipSuccess:
             
-            UIImage *image = BUNDLE_PATH(<#NAME#>, <#EXT#>);
+//            UIImage *image = BUNDLE_PATH(<#NAME#>, <#EXT#>);
             
             hud.customView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"Checkmark-success"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
             break;

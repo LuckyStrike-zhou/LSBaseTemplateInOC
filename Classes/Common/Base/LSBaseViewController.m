@@ -6,19 +6,19 @@
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "LSBaseViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-@interface BaseViewController ()
+@interface LSBaseViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation LSBaseViewController
 
 #pragma mark -- SYSTEM
 
 + (instancetype)allocWithZone:(struct _NSZone *)zone {
-    BaseViewController *viewController = [super allocWithZone:zone];
+    LSBaseViewController *viewController = [super allocWithZone:zone];
     @weakify(viewController)
     [[viewController rac_signalForSelector:@selector(viewDidLoad)] subscribeNext:^(id x) {
         @strongify(viewController)
@@ -52,7 +52,7 @@
 
 #pragma mark --Protocol
 
-- (instancetype)initWithViewModel:(id)viewModel {
+- (instancetype)initWithViewModel:(LSBaseViewModel*)viewModel {
     
     if (self = [super init]){
         

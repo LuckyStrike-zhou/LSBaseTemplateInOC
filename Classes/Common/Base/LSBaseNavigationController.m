@@ -1,18 +1,18 @@
 //
-//  BaseNavigationController.m
+//  LSBaseNavigationController.m
 //  LSSampleInOC
 //
 //  Created by LuckyStrike on 2017/11/16.
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
-#import "BaseNavigationController.h"
+#import "LSBaseNavigationController.h"
 
-@interface BaseNavigationController ()
+@interface LSBaseNavigationController ()
 
 @end
 
-@implementation BaseNavigationController
+@implementation LSBaseNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

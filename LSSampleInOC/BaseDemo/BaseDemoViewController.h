@@ -6,8 +6,8 @@
 //  Copyright © 2017年 LuckyStrike. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "LSBaseViewController.h"
 
-@interface BaseDemoViewController : BaseViewController
+@interface BaseDemoViewController : LSBaseViewController
 
 @end

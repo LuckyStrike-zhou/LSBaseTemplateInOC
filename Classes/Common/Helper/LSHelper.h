@@ -47,9 +47,6 @@
 //unix时间转换为yyyy-mm-dd HH:mm:ss字符串
 +(NSString *)convertUnixDateTimeToString:(double)millionsec;
 
-//判断图片格式
-+(NSString *)mimeTypeByGuessingFromData:(NSData *)data;
-
 + (NSString *)uuid;
 + (NSString *)urlEncodeWithUTF8:(NSString *)sourceString;
 + (NSString *)urlDecodeWithUTF8:(NSString *)sourceString;

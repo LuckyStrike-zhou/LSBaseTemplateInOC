@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSBaseViewModel.h"
 
-@protocol BaseViewModelProtocol;
+@protocol LSBaseViewModelProtocol;
 
-@protocol BaseViewControllerProtocol<NSObject>
+@protocol LSBaseViewControllerProtocol<NSObject>
 
 @optional
 
-- (instancetype)initWithViewModel:(id<BaseViewModelProtocol>)viewModel;
+- (instancetype)initWithViewModel:(LSBaseViewModel*)viewModel;
 /** 绑定 */
 - (void)_bindViewModel;
 /** 添加控件 */
@@ -23,10 +24,11 @@
 - (void)_setupNavigation;
 /** 加载数据 */
 - (void)_loadNewData;
-
+/** 管理键盘  */
+- (void)_managerKeyBoard;
 @end
 
-@interface BaseViewController : UIViewController <BaseViewControllerProtocol>
+@interface LSBaseViewController : UIViewController <LSBaseViewControllerProtocol>
 
 - (void)removeNavgationLine:(BOOL)hidden;
 

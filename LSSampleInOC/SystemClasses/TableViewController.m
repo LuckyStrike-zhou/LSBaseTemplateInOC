@@ -88,7 +88,7 @@
         BaseDemoNavigationController *baseNVC = [[BaseDemoNavigationController alloc] initWithRootViewController:baseVC];
         
         BaseDemoTabbarController *baseTVC = [[BaseDemoTabbarController alloc] init];
-        baseTVC.viewControllers = @[baseNVC,[[BaseViewController alloc] init],[[BaseViewController alloc] init]];
+        baseTVC.viewControllers = @[baseNVC,[[LSBaseViewController alloc] init],[[LSBaseViewController alloc] init]];
         
         [self.navigationController pushViewController:baseTVC animated:YES];
     }else if(indexPath.row == 2){

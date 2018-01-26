@@ -13,6 +13,7 @@
 #import "NotificationMacro.h"
 #import "UtilsMacro.h"
 #import "VendorMacro.h"
+#import <Foundation/Foundation.h>
 
 /**
     测试开关
@@ -30,9 +31,33 @@
 
 #else
 
-#define DLog( s, ... )
-#define PLog( s, ... )
+#define DLog( s, ... ) {}
+#define PLog( s, ... ) {}
 #endif
+
+///------
+/// Block
+///------
+
+typedef void (^VoidBlock)(void);
+typedef BOOL (^BoolBlock)(void);
+typedef int  (^IntBlock) (void);
+typedef id   (^IDBlock)  (void);
+
+typedef void (^VoidBlock_int)(int);
+typedef BOOL (^BoolBlock_int)(int);
+typedef int  (^IntBlock_int) (int);
+typedef id   (^IDBlock_int)  (int);
+
+typedef void (^VoidBlock_string)(NSString *);
+typedef BOOL (^BoolBlock_string)(NSString *);
+typedef int  (^IntBlock_string) (NSString *);
+typedef id   (^IDBlock_string)  (NSString *);
+
+typedef void (^VoidBlock_id)(id);
+typedef BOOL (^BoolBlock_id)(id);
+typedef int  (^IntBlock_id) (id);
+typedef id   (^IDBlock_id)  (id);
 
 /**********************************************
                     版本适配
@@ -55,6 +80,8 @@
 #define kUserDefaults   [NSUserDefaults standardUserDefaults]
 #define kWindow         [[UIApplication sharedApplication] keyWindow]
 #define kRootViewController [[UIApplication sharedApplication] keyWindow].rootViewController
+
+
 
 #define URL(url) [NSURL URLWithString:url]
 
@@ -91,6 +118,10 @@
 #define iPhone6_Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 ///获取版本号
 #define APP_VERSION      [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define MRC_APP_NAME    ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"])
+#define MRC_APP_VERSION ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"])
+#define MRC_APP_BUILD   ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"])
 
 /**********************************************
                     国际化

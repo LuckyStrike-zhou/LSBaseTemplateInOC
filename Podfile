@@ -26,4 +26,15 @@ pod 'MJExtension'
 pod 'FMDB'
 pod 'ReactiveCocoa' ,'2.5'
 
+
+#pod 'SSKeychain', '1.2.3'
+#pod 'IQKeyboardManager', '3.2.0.3'
+#pod 'DZNEmptyDataSet', '1.5.2'
+#pod 'GPUImage', '0.1.7'
+#pod 'Ono', '1.2.2'
+#pod 'Appirater', '2.0.5'
+#pod 'SDVersion', '2.6'
+#pod 'MLeaksFinder', '0.2.0'
+#pod "Appirater"    #跳转商店
+
 end

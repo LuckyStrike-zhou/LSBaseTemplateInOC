@@ -18,6 +18,13 @@
 // 获取屏幕 宽度、高度 bounds就是屏幕的全部区域
 #define FrameSCREEN_WIDTH    ([UIScreen mainScreen].bounds.size.width)
 #define FrameSCREEN_HEIGHT   ([UIScreen mainScreen].bounds.size.height)
+
+///iOS11安全区域的高度
+//状态栏的高度
+#define statuBar_Height ([UIApplication sharedApplication].statusBarFrame.size.height)
+///下方safeArea的高度
+#define bottomSafeArea_Height (34)
+
 // View 坐标(x,y)和宽高(width,height)
 #define FrameX(v)                    (v).frame.origin.x
 #define FrameY(v)                    (v).frame.origin.y

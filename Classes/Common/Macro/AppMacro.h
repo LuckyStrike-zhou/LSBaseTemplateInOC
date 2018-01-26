@@ -9,10 +9,6 @@
 #ifndef AppMacro_h
 #define AppMacro_h
 
-#import "UIMacro.h"
-#import "NotificationMacro.h"
-#import "UtilsMacro.h"
-#import "VendorMacro.h"
 #import <Foundation/Foundation.h>
 
 /**
@@ -28,16 +24,14 @@
 #define DLog( s, ... )  NSLog( @"< %@:(%d) > %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 //显眼注释
 #define PLog( s, ...)   NSLog( @"***%@***:",[NSString stringWithFormat:(s), ##__VA_ARGS__] )
-
 #else
-
 #define DLog( s, ... ) {}
 #define PLog( s, ... ) {}
 #endif
 
-///------
-/// Block
-///------
+/**********************************************
+                    Block
+ ********************************************** */
 
 typedef void (^VoidBlock)(void);
 typedef BOOL (^BoolBlock)(void);
@@ -80,18 +74,21 @@ typedef id   (^IDBlock_id)  (id);
 #define kUserDefaults   [NSUserDefaults standardUserDefaults]
 #define kWindow         [[UIApplication sharedApplication] keyWindow]
 #define kRootViewController [[UIApplication sharedApplication] keyWindow].rootViewController
-
+#define kAppDelegate    [[UIApplication sharedApplication] delegate]
 
 
 #define URL(url) [NSURL URLWithString:url]
 
 #define S_Append(str1,str2) [NSString stringWithFormat:@"%@%@",str1,str2]
+#define S_ParaStr(str1,str2) [NSString stringWithFormat:@"%@=%@&",str1,str2]
 #define S_Int(i)            [NSString stringWithFormat:@"%d",i]
 #define S_Float(f)          [NSString stringWithFormat:@"%f",f]
+#define S_Integer(i)        [NSString stringWithFormat:@"%ld",(long)i]
 
 /**********************************************
                     Bundle 读取
  ********************************************** */
+
 
 // PNG JPG 图片路径
 #define BUNDLE_PATH_PNG(NAME)           [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:NAME] ofType:@"png"]
@@ -105,6 +102,17 @@ typedef id   (^IDBlock_id)  (id);
 #define IMAGE_NAMED(imgName) [UIImage imageNamed:imgName]
 #define IMAGE_CONTENTS_FILE(imgName) [UIImage imageWithContentsOfFile:imgName]
 
+
+#define LSBUNDLE_PATH(bundleName)   [[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"]
+
+#define LSBUNDLE(bundleName)        [NSBundle bundleWithPath:LSBUNDLE_PATH(bundleName)]
+
+#define IMAGE_FROM_BUNDLE(bundleName,name)    [LSBUNDLE_PATH(bundleName) stringByAppendingPathComponent:name]
+
+#define XIB_VIEW_FROM_BUNDLE(bundleName,xibName)  [[LSBUNDLE(bundleName) loadNibNamed:xibName owner:self options:nil] objectAtIndex:0]
+
+#define STORYBOARD_FROM_BUNDLE(bundleName,storyName)    [UIStoryboard storyboardWithName:storyName bundle:LSBUNDLE(bundleName)]
+
 /**********************************************
                     设备信息
  ********************************************** */
@@ -114,6 +122,7 @@ typedef id   (^IDBlock_id)  (id);
 // 是否iPad
 #define DEVICE_ISPad            (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 //设备型号
+#define iPhone5sOrSE ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone6_Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 ///获取版本号

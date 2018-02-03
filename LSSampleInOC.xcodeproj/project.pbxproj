@@ -31,8 +31,6 @@
 		1897F591201AD8F700611CA1 /* MRCMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897F58F201AD8F700611CA1 /* MRCMemoryCache.m */; };
 		1897F594201ADBB700611CA1 /* NSObject+LSBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897F593201ADBB700611CA1 /* NSObject+LSBase.m */; };
 		1897F59A201ADF7000611CA1 /* LSBaseTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897F599201ADF7000611CA1 /* LSBaseTableViewModel.m */; };
-		18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */; };
-		18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */; };
 		18EC65C21FCD03EF00D8B73A /* VideosPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65C11FCD03EF00D8B73A /* VideosPlaceHolder.m */; };
 		18EC65C51FCD040400D8B73A /* SoundsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65C41FCD040400D8B73A /* SoundsPlaceHolder.m */; };
 		18EC65C81FCD041200D8B73A /* FontsPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC65C71FCD041200D8B73A /* FontsPlaceHolder.m */; };
@@ -129,10 +127,6 @@
 		1897F593201ADBB700611CA1 /* NSObject+LSBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LSBase.m"; sourceTree = "<group>"; };
 		1897F598201ADF7000611CA1 /* LSBaseTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSBaseTableViewModel.h; sourceTree = "<group>"; };
 		1897F599201ADF7000611CA1 /* LSBaseTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSBaseTableViewModel.m; sourceTree = "<group>"; };
-		18EC65BA1FCD03C800D8B73A /* ViewModelsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelsPlaceHolder.h; sourceTree = "<group>"; };
-		18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModelsPlaceHolder.m; sourceTree = "<group>"; };
-		18EC65BD1FCD03D900D8B73A /* ViewsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewsPlaceHolder.h; sourceTree = "<group>"; };
-		18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewsPlaceHolder.m; sourceTree = "<group>"; };
 		18EC65C01FCD03EF00D8B73A /* VideosPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideosPlaceHolder.h; sourceTree = "<group>"; };
 		18EC65C11FCD03EF00D8B73A /* VideosPlaceHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideosPlaceHolder.m; sourceTree = "<group>"; };
 		18EC65C31FCD040400D8B73A /* SoundsPlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoundsPlaceHolder.h; sourceTree = "<group>"; };
@@ -267,7 +261,7 @@
 		CB5F298A1FBD6DA400964647 = {
 			isa = PBXGroup;
 			children = (
-				CB5F29D01FBD6EFA00964647 /* Classes */,
+				CB5F29D01FBD6EFA00964647 /* LSClasses */,
 				CB5F29951FBD6DA400964647 /* LSSampleInOC */,
 				CB5F2A031FBD7FD700964647 /* LSSampleInOCTests */,
 				CB5F2A111FBD7FE800964647 /* LSSampleInOCUITests */,
@@ -324,19 +318,7 @@
 			path = SystemClasses;
 			sourceTree = "<group>";
 		};
-		CB5F29D01FBD6EFA00964647 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CB5F29D11FBD6F7600964647 /* Common */,
-				CB5F29E51FBD737D00964647 /* ViewModels */,
-				CB5F29E31FBD733300964647 /* Views */,
-				CB5F29E71FBD73F700964647 /* Resource */,
-				CB5F29E61FBD73CC00964647 /* Vendors */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		CB5F29D11FBD6F7600964647 /* Common */ = {
+		CB5F29D01FBD6EFA00964647 /* LSClasses */ = {
 			isa = PBXGroup;
 			children = (
 				CB5F29D31FBD6FCB00964647 /* Base */,
@@ -344,8 +326,10 @@
 				CB5F29D21FBD6FA000964647 /* Macro */,
 				CB5F29D51FBD701300964647 /* Categories */,
 				CB5F29D41FBD6FD400964647 /* Helper */,
+				CB5F29E71FBD73F700964647 /* Resource */,
+				CB5F29E61FBD73CC00964647 /* Vendors */,
 			);
-			path = Common;
+			path = LSClasses;
 			sourceTree = "<group>";
 		};
 		CB5F29D21FBD6FA000964647 /* Macro */ = {
@@ -432,24 +416,6 @@
 				1821E5F41FDE61B4007B90A5 /* AppDelegate+AppService.m */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		CB5F29E31FBD733300964647 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				18EC65BD1FCD03D900D8B73A /* ViewsPlaceHolder.h */,
-				18EC65BE1FCD03D900D8B73A /* ViewsPlaceHolder.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		CB5F29E51FBD737D00964647 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				18EC65BA1FCD03C800D8B73A /* ViewModelsPlaceHolder.h */,
-				18EC65BB1FCD03C800D8B73A /* ViewModelsPlaceHolder.m */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		CB5F29E61FBD73CC00964647 /* Vendors */ = {
@@ -872,14 +838,12 @@
 				18EC65C81FCD041200D8B73A /* FontsPlaceHolder.m in Sources */,
 				1821E6031FDE6B7D007B90A5 /* EventDispenseCenter.m in Sources */,
 				1897F578201ACB4100611CA1 /* LSBaseViewModel.m in Sources */,
-				18EC65BF1FCD03D900D8B73A /* ViewsPlaceHolder.m in Sources */,
 				1821E6121FDE7BB9007B90A5 /* AFNPackage.m in Sources */,
 				1897F585201AD1FD00611CA1 /* UIView+Borders.m in Sources */,
 				1897F591201AD8F700611CA1 /* MRCMemoryCache.m in Sources */,
 				1897F59A201ADF7000611CA1 /* LSBaseTableViewModel.m in Sources */,
 				CB5F29F01FBD76FD00964647 /* LSBaseNavigationController.m in Sources */,
 				1821E5FB1FDE6443007B90A5 /* UIView+Base.m in Sources */,
-				18EC65BC1FCD03C800D8B73A /* ViewModelsPlaceHolder.m in Sources */,
 				CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */,
 				1832F8771FCFB66A00AB9C27 /* NSString+Secret.m in Sources */,
 				1832F8841FCFB6DB00AB9C27 /* AFNViewController.m in Sources */,

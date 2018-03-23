@@ -306,6 +306,7 @@
 		CB5F29CF1FBD6EDF00964647 /* SystemClasses */ = {
 			isa = PBXGroup;
 			children = (
+				1821E5FC1FDE685A007B90A5 /* GlobalPCH.pch */,
 				CB5F29961FBD6DA400964647 /* AppDelegate.h */,
 				CB5F29971FBD6DA400964647 /* AppDelegate.m */,
 				CB5F29CC1FBD6E6300964647 /* TableViewController.h */,
@@ -335,7 +336,6 @@
 		CB5F29D21FBD6FA000964647 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				1821E5FC1FDE685A007B90A5 /* GlobalPCH.pch */,
 				1821E5FD1FDE690A007B90A5 /* API.h */,
 				CB5F29D81FBD721A00964647 /* AppMacro.h */,
 				CB4F9A301FC6BFAE009B2112 /* UIMacro.h */,
@@ -1045,6 +1045,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8VYD78586B;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LSSampleInOC/SystemClasses/GlobalPCH.pch";
 				INFOPLIST_FILE = LSSampleInOC/SystemClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LuckyStrike.LSSampleInOC;
@@ -1065,6 +1066,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8VYD78586B;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LSSampleInOC/SystemClasses/GlobalPCH.pch";
 				INFOPLIST_FILE = LSSampleInOC/SystemClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LuckyStrike.LSSampleInOC;

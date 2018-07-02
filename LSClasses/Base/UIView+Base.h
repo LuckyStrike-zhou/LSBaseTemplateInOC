@@ -26,6 +26,16 @@
 
 @end
 
-@interface UIView (Base)<BaseViewProtocol>
+@interface UIView (Base)/** <BaseViewProtocol>  */
+
+/**
+*  VM初始化
+*/
+- (instancetype)initWithViewModel:(id)viewModel;
+/**
+ *  绑定
+ */
+- (void)bindViewModel;
+
 
 @end

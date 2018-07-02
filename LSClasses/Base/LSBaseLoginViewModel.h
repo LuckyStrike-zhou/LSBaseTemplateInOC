@@ -18,8 +18,8 @@
 @property (nonatomic,copy) NSString *verifyCode;
 
 /** 按钮能否点击  */
-@property (nonatomic, readonly, strong) RACSignal *validLoginSignal;
+@property (nonatomic,  strong) RACSignal *validLoginSignal;
 /** 登录按钮点击执行的命令  */
-@property (nonatomic, readonly, strong) RACCommand *loginCommand;
+@property (nonatomic,  strong) RACCommand *loginCommand;
 
 @end

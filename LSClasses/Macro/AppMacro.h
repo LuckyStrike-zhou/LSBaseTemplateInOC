@@ -15,6 +15,7 @@
     测试开关
  */
 #define DEBUG  1
+#define APP_VERSION_FOR_CHECK @"1.1.1"
 
 /**********************************************
                     DEBUG LOG
@@ -66,7 +67,8 @@ typedef id   (^IDBlock_id)  (id);
 #define IOS_11 @available(iOS 11.0, *)
 
 #define IOS10 __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-
+//-------------------获取全局AppDelegates-------------------------
+#define GetAppDelegates   (AppDelegate *)[[UIApplication sharedApplication]delegate];
 /**********************************************
                     类别简写
  ********************************************** */

@@ -101,4 +101,15 @@
     return _willDisappearSignal;
 }
 
+- (NSError*)errorHandleResponse:(id)response error:(id)error {
+    
+    NSString *errMsg = ![XYString isBlankString:response[@"resultMsg"]] ? response[@"resultMsg"] : ((NSError*)error).domain;
+    if (!errMsg) {
+        return nil;
+    }
+    NSInteger errCode = ![XYString isBlankString:response[@"errCode"]] ?  [response[@"errCode"] integerValue] : 0;
+    
+    return [NSError errorWithDomain:errMsg code:errCode userInfo:nil];
+}
+
 @end

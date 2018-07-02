@@ -101,5 +101,8 @@
 @property (nonatomic, assign) NSUInteger page;
 @property (nonatomic, assign) NSUInteger perPage;
 
-
+/**
+ *  错误判断
+ */
+- (NSError*)errorHandleResponse:(id)response error:(id)error;
 @end

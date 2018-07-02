@@ -19,6 +19,11 @@
 		1832F8771FCFB66A00AB9C27 /* NSString+Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8741FCFB66A00AB9C27 /* NSString+Secret.m */; };
 		1832F8841FCFB6DB00AB9C27 /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F8831FCFB6DB00AB9C27 /* AFNViewController.m */; };
 		1832F88B1FCFF54500AB9C27 /* ProgressHUDDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1832F88A1FCFF54500AB9C27 /* ProgressHUDDemoController.m */; };
+		18369CE820EA250F0022D7DE /* UIView+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 18369CE120EA250F0022D7DE /* UIView+UI.m */; };
+		18369CE920EA250F0022D7DE /* UIButton+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 18369CE320EA250F0022D7DE /* UIButton+UI.m */; };
+		18369CEA20EA250F0022D7DE /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18369CE520EA250F0022D7DE /* NSDate+Helper.m */; };
+		18369CEB20EA250F0022D7DE /* NSString+limitCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18369CE620EA250F0022D7DE /* NSString+limitCondition.m */; };
+		18369CEC20EA250F0022D7DE /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 18369CE720EA250F0022D7DE /* NSString+Verify.m */; };
 		1855634620185B0B00E10CD9 /* LSCustomHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1855634520185B0B00E10CD9 /* LSCustomHUD.bundle */; };
 		1855634920185CD000E10CD9 /* LSCustomHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1855634820185CD000E10CD9 /* LSCustomHUD.m */; };
 		1897F575201ACAAA00611CA1 /* LSBaseLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897F574201ACAAA00611CA1 /* LSBaseLoginViewModel.m */; };
@@ -104,6 +109,18 @@
 		1832F8831FCFB6DB00AB9C27 /* AFNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
 		1832F8891FCFF54500AB9C27 /* ProgressHUDDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressHUDDemoController.h; sourceTree = "<group>"; };
 		1832F88A1FCFF54500AB9C27 /* ProgressHUDDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDDemoController.m; sourceTree = "<group>"; };
+		18369CDE20EA250E0022D7DE /* NSString+limitCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+limitCondition.h"; sourceTree = "<group>"; };
+		18369CDF20EA250E0022D7DE /* UIButton+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+UI.h"; path = "../../../../../Desktop/Sample/Sample/General/Category/UIButton+UI.h"; sourceTree = "<group>"; };
+		18369CE020EA250F0022D7DE /* UIView+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+UI.h"; path = "../../../../../Desktop/Sample/Sample/General/Category/UIView+UI.h"; sourceTree = "<group>"; };
+		18369CE120EA250F0022D7DE /* UIView+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UI.m"; path = "../../../../../Desktop/Sample/Sample/General/Category/UIView+UI.m"; sourceTree = "<group>"; };
+		18369CE220EA250F0022D7DE /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Verify.h"; path = "../../../../../Desktop/Sample/Sample/General/Category/NSString+Verify.h"; sourceTree = "<group>"; };
+		18369CE320EA250F0022D7DE /* UIButton+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+UI.m"; path = "../../../../../Desktop/Sample/Sample/General/Category/UIButton+UI.m"; sourceTree = "<group>"; };
+		18369CE420EA250F0022D7DE /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		18369CE520EA250F0022D7DE /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		18369CE620EA250F0022D7DE /* NSString+limitCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+limitCondition.m"; sourceTree = "<group>"; };
+		18369CE720EA250F0022D7DE /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Verify.m"; path = "../../../../../Desktop/Sample/Sample/General/Category/NSString+Verify.m"; sourceTree = "<group>"; };
+		18369CED20EA25E40022D7DE /* AppType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppType.h; sourceTree = "<group>"; };
+		18369CEE20EA25F30022D7DE /* GlobalPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalPCH.pch; sourceTree = "<group>"; };
 		1855634520185B0B00E10CD9 /* LSCustomHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LSCustomHUD.bundle; sourceTree = "<group>"; };
 		1855634720185CD000E10CD9 /* LSCustomHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSCustomHUD.h; sourceTree = "<group>"; };
 		1855634820185CD000E10CD9 /* LSCustomHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSCustomHUD.m; sourceTree = "<group>"; };
@@ -339,9 +356,11 @@
 				1821E5FD1FDE690A007B90A5 /* API.h */,
 				CB5F29D81FBD721A00964647 /* AppMacro.h */,
 				CB4F9A301FC6BFAE009B2112 /* UIMacro.h */,
+				18369CEE20EA25F30022D7DE /* GlobalPCH.pch */,
 				CB5F29D91FBD722A00964647 /* NotificationMacro.h */,
 				CB5F29DB1FBD727B00964647 /* UtilsMacro.h */,
 				CB5F29DA1FBD723F00964647 /* VendorMacro.h */,
+				18369CED20EA25E40022D7DE /* AppType.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -387,7 +406,13 @@
 			children = (
 				1897F583201AD1FC00611CA1 /* UIView+Borders.h */,
 				1897F584201AD1FC00611CA1 /* UIView+Borders.m */,
+				18369CE620EA250F0022D7DE /* NSString+limitCondition.m */,
+				18369CE220EA250F0022D7DE /* NSString+Verify.h */,
+				18369CE720EA250F0022D7DE /* NSString+Verify.m */,
 				1821E6091FDE6EE6007B90A5 /* UIButton+UI.h */,
+				18369CE320EA250F0022D7DE /* UIButton+UI.m */,
+				18369CE020EA250F0022D7DE /* UIView+UI.h */,
+				18369CE120EA250F0022D7DE /* UIView+UI.m */,
 				1821E6081FDE6EE6007B90A5 /* UIButton+UI.m */,
 				1821E6071FDE6EE5007B90A5 /* UIView+UI.h */,
 				1821E60A1FDE6EE6007B90A5 /* UIView+UI.m */,
@@ -405,6 +430,10 @@
 				1897F58A201AD44700611CA1 /* NSString+LSBase.m */,
 				1897F592201ADBB700611CA1 /* NSObject+LSBase.h */,
 				1897F593201ADBB700611CA1 /* NSObject+LSBase.m */,
+				18369CE420EA250F0022D7DE /* NSDate+Helper.h */,
+				18369CE520EA250F0022D7DE /* NSDate+Helper.m */,
+				18369CDE20EA250E0022D7DE /* NSString+limitCondition.h */,
+				18369CDF20EA250E0022D7DE /* UIButton+UI.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -843,6 +872,7 @@
 				1897F591201AD8F700611CA1 /* MRCMemoryCache.m in Sources */,
 				1897F59A201ADF7000611CA1 /* LSBaseTableViewModel.m in Sources */,
 				CB5F29F01FBD76FD00964647 /* LSBaseNavigationController.m in Sources */,
+				18369CEC20EA250F0022D7DE /* NSString+Verify.m in Sources */,
 				1821E5FB1FDE6443007B90A5 /* UIView+Base.m in Sources */,
 				CB34B26A1FC2DA50004B0673 /* NSString+FileManager.m in Sources */,
 				1832F8771FCFB66A00AB9C27 /* NSString+Secret.m in Sources */,
@@ -852,6 +882,7 @@
 				18EC65D81FCD07BD00D8B73A /* BaseDemoTabbarController.m in Sources */,
 				1821E5F51FDE61B4007B90A5 /* AppDelegate+AppService.m in Sources */,
 				CB5F29981FBD6DA400964647 /* AppDelegate.m in Sources */,
+				18369CEB20EA250F0022D7DE /* NSString+limitCondition.m in Sources */,
 				1897F58E201AD7E400611CA1 /* UIImage+ImageEffects.m in Sources */,
 				1821E60C1FDE6EE6007B90A5 /* UIView+UI.m in Sources */,
 				18EC65CB1FCD042500D8B73A /* ImagesPlaceHolder.m in Sources */,
@@ -859,13 +890,16 @@
 				18EC65C51FCD040400D8B73A /* SoundsPlaceHolder.m in Sources */,
 				CB4F9A331FC6C5AD009B2112 /* NSDate+FastTransform.m in Sources */,
 				1821E6151FDE7BDC007B90A5 /* MBProgressHUD+Show.m in Sources */,
+				18369CEA20EA250F0022D7DE /* NSDate+Helper.m in Sources */,
 				CB5F29DE1FBD729500964647 /* LSBaseViewController.m in Sources */,
+				18369CE920EA250F0022D7DE /* UIButton+UI.m in Sources */,
 				CB4780341FC3F5FC00EEED86 /* FileManagerVC.m in Sources */,
 				1897F57F201ACF5000611CA1 /* LSBaseViewModelServices.m in Sources */,
 				18EC65D51FCD079400D8B73A /* BaseDemoNavigationController.m in Sources */,
 				1897F575201ACAAA00611CA1 /* LSBaseLoginViewModel.m in Sources */,
 				18EC65C21FCD03EF00D8B73A /* VideosPlaceHolder.m in Sources */,
 				1855634920185CD000E10CD9 /* LSCustomHUD.m in Sources */,
+				18369CE820EA250F0022D7DE /* UIView+UI.m in Sources */,
 				18EC65D21FCD076800D8B73A /* BaseDemoViewController.m in Sources */,
 				CB5F29F31FBD771B00964647 /* BaseTabBarController.m in Sources */,
 				CB5F29A91FBD6DA400964647 /* main.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#pragma Mark -- 自定义代码在此实现，在AppDelegate调用
+#pragma Mark -- 自定义代码在此实现,在AppDelegate调用
 
 @interface AppDelegate (AppService)
 /**

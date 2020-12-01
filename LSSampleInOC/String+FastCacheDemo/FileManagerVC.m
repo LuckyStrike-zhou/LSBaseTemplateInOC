@@ -39,8 +39,8 @@
     NSString *dicFolderPath = [[NSString FastTmp] folderFC:@"DicFolder"];
     NSString *dicFilePath = [dicFolderPath fileFC:@"InfoDic"];
     
-//    [dataFilePath saveFC:data];
-//    [dicFilePath saveFC:dic];
+    [dataFilePath saveFC:data];
+    [dicFilePath saveFC:dic];
     NSLog(@"%f",[dataFolderPath sizeFC]);
     NSLog(@"%f",[dicFilePath sizeFC]);
     

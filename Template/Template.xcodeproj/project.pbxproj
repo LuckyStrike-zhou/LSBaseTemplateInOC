@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C5974E082AB7E384765FF21 /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A140CE3CB4E8983C1FDB2C8 /* Pods_Template.framework */; };
+		CBCB54C625A60CED003EB6BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54C525A60CED003EB6BA /* AppDelegate.m */; };
+		CBCB54C925A60CED003EB6BA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54C825A60CED003EB6BA /* SceneDelegate.m */; };
+		CBCB54CC25A60CED003EB6BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54CB25A60CED003EB6BA /* ViewController.m */; };
+		CBCB54D125A60CEE003EB6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCB54D025A60CEE003EB6BA /* Assets.xcassets */; };
+		CBCB54D425A60CEE003EB6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCB54D225A60CEE003EB6BA /* LaunchScreen.storyboard */; };
+		CBCB54D725A60CEE003EB6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54D625A60CEE003EB6BA /* main.m */; };
+		CBCB558D25A610A0003EB6BA /* UIView+UIShorter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54F525A610A0003EB6BA /* UIView+UIShorter.m */; };
+		CBCB558E25A610A0003EB6BA /* UIButton+UIShorter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54F625A610A0003EB6BA /* UIButton+UIShorter.m */; };
+		CBCB558F25A610A0003EB6BA /* UIImageView+UIShorter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54F725A610A0003EB6BA /* UIImageView+UIShorter.m */; };
+		CBCB559025A610A0003EB6BA /* UILabel+UIShorter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB54FC25A610A0003EB6BA /* UILabel+UIShorter.m */; };
+		CBCB559125A610A0003EB6BA /* LYFAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB550225A610A0003EB6BA /* LYFAlbumViewController.m */; };
+		CBCB559225A610A0003EB6BA /* LYFPhotoManger.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB550725A610A0003EB6BA /* LYFPhotoManger.m */; };
+		CBCB559325A610A0003EB6BA /* LYFPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB550925A610A0003EB6BA /* LYFPhotoModel.m */; };
+		CBCB559425A610A0003EB6BA /* LYFAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB550B25A610A0003EB6BA /* LYFAlbumModel.m */; };
+		CBCB559525A610A0003EB6BA /* LYFAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB550E25A610A0003EB6BA /* LYFAlbumCollectionViewCell.m */; };
+		CBCB559625A610A0003EB6BA /* LYFAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB551125A610A0003EB6BA /* LYFAlbumTableViewCell.m */; };
+		CBCB559725A610A0003EB6BA /* LYFAlbumTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB551325A610A0003EB6BA /* LYFAlbumTableView.m */; };
+		CBCB559825A610A0003EB6BA /* LYFAlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB551425A610A0003EB6BA /* LYFAlbumView.m */; };
+		CBCB559925A610A0003EB6BA /* LYFPhotosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB551625A610A0003EB6BA /* LYFPhotosManager.m */; };
+		CBCB559A25A610A0003EB6BA /* BRPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB551725A610A0003EB6BA /* BRPlaceholderTextView.m */; };
+		CBCB559B25A610A0003EB6BA /* YYRSIPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB551C25A610A0003EB6BA /* YYRSIPainter.m */; };
+		CBCB559C25A610A0003EB6BA /* YYBOLLPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB551E25A610A0003EB6BA /* YYBOLLPainter.m */; };
+		CBCB559D25A610A0003EB6BA /* YYTimelinePainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB552225A610A0003EB6BA /* YYTimelinePainter.m */; };
+		CBCB559E25A610A0003EB6BA /* YYMAPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB552425A610A0003EB6BA /* YYMAPainter.m */; };
+		CBCB559F25A610A0003EB6BA /* YYTimePainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB552725A610A0003EB6BA /* YYTimePainter.m */; };
+		CBCB55A025A610A0003EB6BA /* YYEMAPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB552B25A610A0003EB6BA /* YYEMAPainter.m */; };
+		CBCB55A125A610A0003EB6BA /* YYCandlePainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB552E25A610A0003EB6BA /* YYCandlePainter.m */; };
+		CBCB55A225A610A0003EB6BA /* YYVerticalTextPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB553025A610A0003EB6BA /* YYVerticalTextPainter.m */; };
+		CBCB55A325A610A0003EB6BA /* YYVolPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB553425A610A0003EB6BA /* YYVolPainter.m */; };
+		CBCB55A425A610A0003EB6BA /* YYWRPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB553825A610A0003EB6BA /* YYWRPainter.m */; };
+		CBCB55A525A610A0003EB6BA /* YYKDJPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB553B25A610A0003EB6BA /* YYKDJPainter.m */; };
+		CBCB55A625A610A0003EB6BA /* YYMACDPainter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB553E25A610A0003EB6BA /* YYMACDPainter.m */; };
+		CBCB55A725A610A0003EB6BA /* YYKlineGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB554225A610A0003EB6BA /* YYKlineGlobalVariable.m */; };
+		CBCB55A825A610A0003EB6BA /* UIColor+YYKline.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB554725A610A0003EB6BA /* UIColor+YYKline.m */; };
+		CBCB55A925A610A0003EB6BA /* YYKlineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB554D25A610A0003EB6BA /* YYKlineModel.m */; };
+		CBCB55AA25A610A0003EB6BA /* YYKlineRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB554F25A610A0003EB6BA /* YYKlineRootModel.m */; };
+		CBCB55AB25A610A0003EB6BA /* YYIndicatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555125A610A0003EB6BA /* YYIndicatorModel.m */; };
+		CBCB55AC25A610A0003EB6BA /* YYMinMaxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555225A610A0003EB6BA /* YYMinMaxModel.m */; };
+		CBCB55AD25A610A0003EB6BA /* YYKlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555325A610A0003EB6BA /* YYKlineView.m */; };
+		CBCB55AE25A610A0003EB6BA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555625A610A0003EB6BA /* HomeViewController.m */; };
+		CBCB55AF25A610A0003EB6BA /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555725A610A0003EB6BA /* PostViewController.m */; };
+		CBCB55B025A610A0003EB6BA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555825A610A0003EB6BA /* LoginViewController.m */; };
+		CBCB55B125A610A0003EB6BA /* MarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555A25A610A0003EB6BA /* MarketViewController.m */; };
+		CBCB55B225A610A0003EB6BA /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB555F25A610A0003EB6BA /* ProfileViewController.m */; };
+		CBCB55B325A610A0003EB6BA /* StockDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556125A610A0003EB6BA /* StockDetailViewController.m */; };
+		CBCB55B425A610A0003EB6BA /* QAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556225A610A0003EB6BA /* QAViewController.m */; };
+		CBCB55B525A610A0003EB6BA /* MarketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556525A610A0003EB6BA /* MarketModel.m */; };
+		CBCB55B625A610A0003EB6BA /* NewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556925A610A0003EB6BA /* NewModel.m */; };
+		CBCB55B725A610A0003EB6BA /* QAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556A25A610A0003EB6BA /* QAModel.m */; };
+		CBCB55B825A610A0003EB6BA /* HotStockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556D25A610A0003EB6BA /* HotStockCell.m */; };
+		CBCB55B925A610A0003EB6BA /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556E25A610A0003EB6BA /* PhotoCollectionViewCell.m */; };
+		CBCB55BA25A610A0003EB6BA /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB556F25A610A0003EB6BA /* AccountCell.m */; };
+		CBCB55BB25A610A0003EB6BA /* MarketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB557025A610A0003EB6BA /* MarketCell.m */; };
+		CBCB55BC25A610A0003EB6BA /* QATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB557125A610A0003EB6BA /* QATableViewCell.m */; };
+		CBCB55BD25A610A0003EB6BA /* FZFenSTXJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CBCB557725A610A0003EB6BA /* FZFenSTXJW.TTF */; };
+		CBCB55BE25A610A0003EB6BA /* 方正剪纸简体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBCB557825A610A0003EB6BA /* 方正剪纸简体.ttf */; };
+		CBCB55BF25A610A0003EB6BA /* ZTBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB557B25A610A0003EB6BA /* ZTBaseTableViewCell.m */; };
+		CBCB55C025A610A0003EB6BA /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB557E25A610A0003EB6BA /* Tools.m */; };
+		CBCB55C125A610A0003EB6BA /* ZTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB558125A610A0003EB6BA /* ZTNavigationController.m */; };
+		CBCB55C225A610A0003EB6BA /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB558225A610A0003EB6BA /* UIImage+Image.m */; };
+		CBCB55C325A610A0003EB6BA /* ZTNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB558425A610A0003EB6BA /* ZTNetwork.m */; };
+		CBCB55C425A610A0003EB6BA /* ZTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB558525A610A0003EB6BA /* ZTBaseViewController.m */; };
+		CBCB55C525A610A0003EB6BA /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB558825A610A0003EB6BA /* HUD.m */; };
+		CBCB55C625A610A0003EB6BA /* ZTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB558925A610A0003EB6BA /* ZTTabBar.m */; };
+		CBCB55C725A610A0003EB6BA /* ZTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB558B25A610A0003EB6BA /* ZTTabBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0981F3DA9764314C239CB034 /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
+		3A140CE3CB4E8983C1FDB2C8 /* Pods_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85618A362D5060A5EF659E10 /* Pods-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.debug.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.debug.xcconfig"; sourceTree = "<group>"; };
+		CBCB54C125A60CED003EB6BA /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCB54C425A60CED003EB6BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBCB54C525A60CED003EB6BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBCB54C725A60CED003EB6BA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CBCB54C825A60CED003EB6BA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CBCB54CA25A60CED003EB6BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBCB54CB25A60CED003EB6BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBCB54D025A60CEE003EB6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBCB54D325A60CEE003EB6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBCB54D525A60CEE003EB6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCB54D625A60CEE003EB6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBCB54F525A610A0003EB6BA /* UIView+UIShorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIShorter.m"; sourceTree = "<group>"; };
+		CBCB54F625A610A0003EB6BA /* UIButton+UIShorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UIShorter.m"; sourceTree = "<group>"; };
+		CBCB54F725A610A0003EB6BA /* UIImageView+UIShorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UIShorter.m"; sourceTree = "<group>"; };
+		CBCB54F825A610A0003EB6BA /* UILabel+UIShorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+UIShorter.h"; sourceTree = "<group>"; };
+		CBCB54F925A610A0003EB6BA /* UIButton+UIShorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+UIShorter.h"; sourceTree = "<group>"; };
+		CBCB54FA25A610A0003EB6BA /* UIView+UIShorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIShorter.h"; sourceTree = "<group>"; };
+		CBCB54FB25A610A0003EB6BA /* UIImageView+UIShorter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIShorter.h"; sourceTree = "<group>"; };
+		CBCB54FC25A610A0003EB6BA /* UILabel+UIShorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+UIShorter.m"; sourceTree = "<group>"; };
+		CBCB54FE25A610A0003EB6BA /* BRPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPlaceholderTextView.h; sourceTree = "<group>"; };
+		CBCB550025A610A0003EB6BA /* LYFPhotosManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFPhotosManager.h; sourceTree = "<group>"; };
+		CBCB550225A610A0003EB6BA /* LYFAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFAlbumViewController.m; sourceTree = "<group>"; };
+		CBCB550325A610A0003EB6BA /* LYFAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFAlbumViewController.h; sourceTree = "<group>"; };
+		CBCB550625A610A0003EB6BA /* LYFPhotoManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFPhotoManger.h; sourceTree = "<group>"; };
+		CBCB550725A610A0003EB6BA /* LYFPhotoManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFPhotoManger.m; sourceTree = "<group>"; };
+		CBCB550825A610A0003EB6BA /* LYFAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFAlbumModel.h; sourceTree = "<group>"; };
+		CBCB550925A610A0003EB6BA /* LYFPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFPhotoModel.m; sourceTree = "<group>"; };
+		CBCB550A25A610A0003EB6BA /* LYFPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFPhotoModel.h; sourceTree = "<group>"; };
+		CBCB550B25A610A0003EB6BA /* LYFAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFAlbumModel.m; sourceTree = "<group>"; };
+		CBCB550D25A610A0003EB6BA /* LYFAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFAlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		CBCB550E25A610A0003EB6BA /* LYFAlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFAlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		CBCB551025A610A0003EB6BA /* LYFAlbumTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFAlbumTableView.h; sourceTree = "<group>"; };
+		CBCB551125A610A0003EB6BA /* LYFAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFAlbumTableViewCell.m; sourceTree = "<group>"; };
+		CBCB551225A610A0003EB6BA /* LYFAlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFAlbumView.h; sourceTree = "<group>"; };
+		CBCB551325A610A0003EB6BA /* LYFAlbumTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFAlbumTableView.m; sourceTree = "<group>"; };
+		CBCB551425A610A0003EB6BA /* LYFAlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFAlbumView.m; sourceTree = "<group>"; };
+		CBCB551525A610A0003EB6BA /* LYFAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFAlbumTableViewCell.h; sourceTree = "<group>"; };
+		CBCB551625A610A0003EB6BA /* LYFPhotosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFPhotosManager.m; sourceTree = "<group>"; };
+		CBCB551725A610A0003EB6BA /* BRPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPlaceholderTextView.m; sourceTree = "<group>"; };
+		CBCB551B25A610A0003EB6BA /* YYRSIPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRSIPainter.h; sourceTree = "<group>"; };
+		CBCB551C25A610A0003EB6BA /* YYRSIPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRSIPainter.m; sourceTree = "<group>"; };
+		CBCB551E25A610A0003EB6BA /* YYBOLLPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBOLLPainter.m; sourceTree = "<group>"; };
+		CBCB551F25A610A0003EB6BA /* YYBOLLPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYBOLLPainter.h; sourceTree = "<group>"; };
+		CBCB552125A610A0003EB6BA /* YYTimelinePainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimelinePainter.h; sourceTree = "<group>"; };
+		CBCB552225A610A0003EB6BA /* YYTimelinePainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimelinePainter.m; sourceTree = "<group>"; };
+		CBCB552425A610A0003EB6BA /* YYMAPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMAPainter.m; sourceTree = "<group>"; };
+		CBCB552525A610A0003EB6BA /* YYMAPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMAPainter.h; sourceTree = "<group>"; };
+		CBCB552725A610A0003EB6BA /* YYTimePainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTimePainter.m; sourceTree = "<group>"; };
+		CBCB552825A610A0003EB6BA /* YYTimePainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTimePainter.h; sourceTree = "<group>"; };
+		CBCB552A25A610A0003EB6BA /* YYEMAPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYEMAPainter.h; sourceTree = "<group>"; };
+		CBCB552B25A610A0003EB6BA /* YYEMAPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYEMAPainter.m; sourceTree = "<group>"; };
+		CBCB552D25A610A0003EB6BA /* YYCandlePainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCandlePainter.h; sourceTree = "<group>"; };
+		CBCB552E25A610A0003EB6BA /* YYCandlePainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCandlePainter.m; sourceTree = "<group>"; };
+		CBCB553025A610A0003EB6BA /* YYVerticalTextPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYVerticalTextPainter.m; sourceTree = "<group>"; };
+		CBCB553125A610A0003EB6BA /* YYVerticalTextPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYVerticalTextPainter.h; sourceTree = "<group>"; };
+		CBCB553225A610A0003EB6BA /* YYPainterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYPainterProtocol.h; sourceTree = "<group>"; };
+		CBCB553425A610A0003EB6BA /* YYVolPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYVolPainter.m; sourceTree = "<group>"; };
+		CBCB553525A610A0003EB6BA /* YYVolPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYVolPainter.h; sourceTree = "<group>"; };
+		CBCB553725A610A0003EB6BA /* YYWRPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWRPainter.h; sourceTree = "<group>"; };
+		CBCB553825A610A0003EB6BA /* YYWRPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWRPainter.m; sourceTree = "<group>"; };
+		CBCB553A25A610A0003EB6BA /* YYKDJPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKDJPainter.h; sourceTree = "<group>"; };
+		CBCB553B25A610A0003EB6BA /* YYKDJPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKDJPainter.m; sourceTree = "<group>"; };
+		CBCB553D25A610A0003EB6BA /* YYMACDPainter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMACDPainter.h; sourceTree = "<group>"; };
+		CBCB553E25A610A0003EB6BA /* YYMACDPainter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMACDPainter.m; sourceTree = "<group>"; };
+		CBCB553F25A610A0003EB6BA /* YYKlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineView.h; sourceTree = "<group>"; };
+		CBCB554225A610A0003EB6BA /* YYKlineGlobalVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKlineGlobalVariable.m; sourceTree = "<group>"; };
+		CBCB554325A610A0003EB6BA /* YYKlineGlobalVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineGlobalVariable.h; sourceTree = "<group>"; };
+		CBCB554525A610A0003EB6BA /* YYKlineConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineConstant.h; sourceTree = "<group>"; };
+		CBCB554725A610A0003EB6BA /* UIColor+YYKline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YYKline.m"; sourceTree = "<group>"; };
+		CBCB554825A610A0003EB6BA /* UIColor+YYKline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YYKline.h"; sourceTree = "<group>"; };
+		CBCB554925A610A0003EB6BA /* YYKline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKline.h; sourceTree = "<group>"; };
+		CBCB554B25A610A0003EB6BA /* YYKlineRootModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineRootModel.h; sourceTree = "<group>"; };
+		CBCB554C25A610A0003EB6BA /* YYIndicatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYIndicatorModel.h; sourceTree = "<group>"; };
+		CBCB554D25A610A0003EB6BA /* YYKlineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKlineModel.m; sourceTree = "<group>"; };
+		CBCB554E25A610A0003EB6BA /* YYMinMaxModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMinMaxModel.h; sourceTree = "<group>"; };
+		CBCB554F25A610A0003EB6BA /* YYKlineRootModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKlineRootModel.m; sourceTree = "<group>"; };
+		CBCB555025A610A0003EB6BA /* YYKlineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKlineModel.h; sourceTree = "<group>"; };
+		CBCB555125A610A0003EB6BA /* YYIndicatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYIndicatorModel.m; sourceTree = "<group>"; };
+		CBCB555225A610A0003EB6BA /* YYMinMaxModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMinMaxModel.m; sourceTree = "<group>"; };
+		CBCB555325A610A0003EB6BA /* YYKlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKlineView.m; sourceTree = "<group>"; };
+		CBCB555425A610A0003EB6BA /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		CBCB555625A610A0003EB6BA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CBCB555725A610A0003EB6BA /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		CBCB555825A610A0003EB6BA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CBCB555925A610A0003EB6BA /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		CBCB555A25A610A0003EB6BA /* MarketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketViewController.m; sourceTree = "<group>"; };
+		CBCB555B25A610A0003EB6BA /* QAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAViewController.h; sourceTree = "<group>"; };
+		CBCB555C25A610A0003EB6BA /* StockDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockDetailViewController.h; sourceTree = "<group>"; };
+		CBCB555D25A610A0003EB6BA /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		CBCB555E25A610A0003EB6BA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CBCB555F25A610A0003EB6BA /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		CBCB556025A610A0003EB6BA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CBCB556125A610A0003EB6BA /* StockDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockDetailViewController.m; sourceTree = "<group>"; };
+		CBCB556225A610A0003EB6BA /* QAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAViewController.m; sourceTree = "<group>"; };
+		CBCB556325A610A0003EB6BA /* MarketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketViewController.h; sourceTree = "<group>"; };
+		CBCB556525A610A0003EB6BA /* MarketModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketModel.m; sourceTree = "<group>"; };
+		CBCB556625A610A0003EB6BA /* NewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewModel.h; sourceTree = "<group>"; };
+		CBCB556725A610A0003EB6BA /* QAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAModel.h; sourceTree = "<group>"; };
+		CBCB556825A610A0003EB6BA /* MarketModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketModel.h; sourceTree = "<group>"; };
+		CBCB556925A610A0003EB6BA /* NewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewModel.m; sourceTree = "<group>"; };
+		CBCB556A25A610A0003EB6BA /* QAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAModel.m; sourceTree = "<group>"; };
+		CBCB556C25A610A0003EB6BA /* QATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QATableViewCell.h; sourceTree = "<group>"; };
+		CBCB556D25A610A0003EB6BA /* HotStockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotStockCell.m; sourceTree = "<group>"; };
+		CBCB556E25A610A0003EB6BA /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		CBCB556F25A610A0003EB6BA /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
+		CBCB557025A610A0003EB6BA /* MarketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketCell.m; sourceTree = "<group>"; };
+		CBCB557125A610A0003EB6BA /* QATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QATableViewCell.m; sourceTree = "<group>"; };
+		CBCB557225A610A0003EB6BA /* HotStockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotStockCell.h; sourceTree = "<group>"; };
+		CBCB557325A610A0003EB6BA /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		CBCB557425A610A0003EB6BA /* MarketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketCell.h; sourceTree = "<group>"; };
+		CBCB557525A610A0003EB6BA /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
+		CBCB557725A610A0003EB6BA /* FZFenSTXJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZFenSTXJW.TTF; sourceTree = "<group>"; };
+		CBCB557825A610A0003EB6BA /* 方正剪纸简体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正剪纸简体.ttf"; sourceTree = "<group>"; };
+		CBCB557925A610A0003EB6BA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CBCB557B25A610A0003EB6BA /* ZTBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTBaseTableViewCell.m; sourceTree = "<group>"; };
+		CBCB557C25A610A0003EB6BA /* ZTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTBaseViewController.h; sourceTree = "<group>"; };
+		CBCB557D25A610A0003EB6BA /* ZTNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTNetwork.h; sourceTree = "<group>"; };
+		CBCB557E25A610A0003EB6BA /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		CBCB557F25A610A0003EB6BA /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		CBCB558025A610A0003EB6BA /* ZTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBar.h; sourceTree = "<group>"; };
+		CBCB558125A610A0003EB6BA /* ZTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTNavigationController.m; sourceTree = "<group>"; };
+		CBCB558225A610A0003EB6BA /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		CBCB558325A610A0003EB6BA /* ZTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTTabBarController.h; sourceTree = "<group>"; };
+		CBCB558425A610A0003EB6BA /* ZTNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTNetwork.m; sourceTree = "<group>"; };
+		CBCB558525A610A0003EB6BA /* ZTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTBaseViewController.m; sourceTree = "<group>"; };
+		CBCB558625A610A0003EB6BA /* ZTBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTBaseTableViewCell.h; sourceTree = "<group>"; };
+		CBCB558725A610A0003EB6BA /* ZTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTNavigationController.h; sourceTree = "<group>"; };
+		CBCB558825A610A0003EB6BA /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		CBCB558925A610A0003EB6BA /* ZTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTTabBar.m; sourceTree = "<group>"; };
+		CBCB558A25A610A0003EB6BA /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		CBCB558B25A610A0003EB6BA /* ZTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTTabBarController.m; sourceTree = "<group>"; };
+		CBCB558C25A610A0003EB6BA /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBCB54BE25A60CED003EB6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5974E082AB7E384765FF21 /* Pods_Template.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A29AAB2C02B35D62C0E7DE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85618A362D5060A5EF659E10 /* Pods-Template.debug.xcconfig */,
+				0981F3DA9764314C239CB034 /* Pods-Template.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CBCB54B825A60CED003EB6BA = {
+			isa = PBXGroup;
+			children = (
+				CBCB54C325A60CED003EB6BA /* Template */,
+				CBCB54C225A60CED003EB6BA /* Products */,
+				6A29AAB2C02B35D62C0E7DE6 /* Pods */,
+				E8802DC12BA64C361F503B2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBCB54C225A60CED003EB6BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB54C125A60CED003EB6BA /* Template.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBCB54C325A60CED003EB6BA /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB557925A610A0003EB6BA /* PrefixHeader.pch */,
+				CBCB555425A610A0003EB6BA /* Macro.h */,
+				CBCB54F325A610A0003EB6BA /* Class */,
+				CBCB54C425A60CED003EB6BA /* AppDelegate.h */,
+				CBCB54C525A60CED003EB6BA /* AppDelegate.m */,
+				CBCB54C725A60CED003EB6BA /* SceneDelegate.h */,
+				CBCB54C825A60CED003EB6BA /* SceneDelegate.m */,
+				CBCB54CA25A60CED003EB6BA /* ViewController.h */,
+				CBCB54CB25A60CED003EB6BA /* ViewController.m */,
+				CBCB54D025A60CEE003EB6BA /* Assets.xcassets */,
+				CBCB54D225A60CEE003EB6BA /* LaunchScreen.storyboard */,
+				CBCB54D525A60CEE003EB6BA /* Info.plist */,
+				CBCB54D625A60CEE003EB6BA /* main.m */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		CBCB54F325A610A0003EB6BA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB54F425A610A0003EB6BA /* Extension */,
+				CBCB54FD25A610A0003EB6BA /* Third */,
+				CBCB555525A610A0003EB6BA /* Controller */,
+				CBCB556425A610A0003EB6BA /* Model */,
+				CBCB556B25A610A0003EB6BA /* View */,
+				CBCB557625A610A0003EB6BA /* resource */,
+				CBCB557A25A610A0003EB6BA /* Helper */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		CBCB54F425A610A0003EB6BA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB54F525A610A0003EB6BA /* UIView+UIShorter.m */,
+				CBCB54F625A610A0003EB6BA /* UIButton+UIShorter.m */,
+				CBCB54F725A610A0003EB6BA /* UIImageView+UIShorter.m */,
+				CBCB54F825A610A0003EB6BA /* UILabel+UIShorter.h */,
+				CBCB54F925A610A0003EB6BA /* UIButton+UIShorter.h */,
+				CBCB54FA25A610A0003EB6BA /* UIView+UIShorter.h */,
+				CBCB54FB25A610A0003EB6BA /* UIImageView+UIShorter.h */,
+				CBCB54FC25A610A0003EB6BA /* UILabel+UIShorter.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CBCB54FD25A610A0003EB6BA /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB54FE25A610A0003EB6BA /* BRPlaceholderTextView.h */,
+				CBCB551725A610A0003EB6BA /* BRPlaceholderTextView.m */,
+				CBCB54FF25A610A0003EB6BA /* Album */,
+				CBCB551825A610A0003EB6BA /* YYKline */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		CBCB54FF25A610A0003EB6BA /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB550025A610A0003EB6BA /* LYFPhotosManager.h */,
+				CBCB550125A610A0003EB6BA /* Controller */,
+				CBCB550425A610A0003EB6BA /* Model */,
+				CBCB550C25A610A0003EB6BA /* View */,
+				CBCB551625A610A0003EB6BA /* LYFPhotosManager.m */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		CBCB550125A610A0003EB6BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB550225A610A0003EB6BA /* LYFAlbumViewController.m */,
+				CBCB550325A610A0003EB6BA /* LYFAlbumViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBCB550425A610A0003EB6BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB550525A610A0003EB6BA /* PhotoManger */,
+				CBCB550825A610A0003EB6BA /* LYFAlbumModel.h */,
+				CBCB550925A610A0003EB6BA /* LYFPhotoModel.m */,
+				CBCB550A25A610A0003EB6BA /* LYFPhotoModel.h */,
+				CBCB550B25A610A0003EB6BA /* LYFAlbumModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBCB550525A610A0003EB6BA /* PhotoManger */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB550625A610A0003EB6BA /* LYFPhotoManger.h */,
+				CBCB550725A610A0003EB6BA /* LYFPhotoManger.m */,
+			);
+			path = PhotoManger;
+			sourceTree = "<group>";
+		};
+		CBCB550C25A610A0003EB6BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB550D25A610A0003EB6BA /* LYFAlbumCollectionViewCell.h */,
+				CBCB550E25A610A0003EB6BA /* LYFAlbumCollectionViewCell.m */,
+				CBCB550F25A610A0003EB6BA /* Album */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBCB550F25A610A0003EB6BA /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB551025A610A0003EB6BA /* LYFAlbumTableView.h */,
+				CBCB551125A610A0003EB6BA /* LYFAlbumTableViewCell.m */,
+				CBCB551225A610A0003EB6BA /* LYFAlbumView.h */,
+				CBCB551325A610A0003EB6BA /* LYFAlbumTableView.m */,
+				CBCB551425A610A0003EB6BA /* LYFAlbumView.m */,
+				CBCB551525A610A0003EB6BA /* LYFAlbumTableViewCell.h */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		CBCB551825A610A0003EB6BA /* YYKline */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB551925A610A0003EB6BA /* Painter */,
+				CBCB553F25A610A0003EB6BA /* YYKlineView.h */,
+				CBCB554025A610A0003EB6BA /* Config */,
+				CBCB554925A610A0003EB6BA /* YYKline.h */,
+				CBCB554A25A610A0003EB6BA /* Model */,
+				CBCB555325A610A0003EB6BA /* YYKlineView.m */,
+			);
+			path = YYKline;
+			sourceTree = "<group>";
+		};
+		CBCB551925A610A0003EB6BA /* Painter */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB551A25A610A0003EB6BA /* YYRSI */,
+				CBCB551D25A610A0003EB6BA /* YYBOLL */,
+				CBCB552025A610A0003EB6BA /* YYTimeline */,
+				CBCB552325A610A0003EB6BA /* YYMA */,
+				CBCB552625A610A0003EB6BA /* YYTime */,
+				CBCB552925A610A0003EB6BA /* YYEMA */,
+				CBCB552C25A610A0003EB6BA /* YYCandle */,
+				CBCB552F25A610A0003EB6BA /* YYVerticalText */,
+				CBCB553225A610A0003EB6BA /* YYPainterProtocol.h */,
+				CBCB553325A610A0003EB6BA /* YYVol */,
+				CBCB553625A610A0003EB6BA /* YYWR */,
+				CBCB553925A610A0003EB6BA /* YYKDJ */,
+				CBCB553C25A610A0003EB6BA /* YYMACD */,
+			);
+			path = Painter;
+			sourceTree = "<group>";
+		};
+		CBCB551A25A610A0003EB6BA /* YYRSI */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB551B25A610A0003EB6BA /* YYRSIPainter.h */,
+				CBCB551C25A610A0003EB6BA /* YYRSIPainter.m */,
+			);
+			path = YYRSI;
+			sourceTree = "<group>";
+		};
+		CBCB551D25A610A0003EB6BA /* YYBOLL */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB551E25A610A0003EB6BA /* YYBOLLPainter.m */,
+				CBCB551F25A610A0003EB6BA /* YYBOLLPainter.h */,
+			);
+			path = YYBOLL;
+			sourceTree = "<group>";
+		};
+		CBCB552025A610A0003EB6BA /* YYTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB552125A610A0003EB6BA /* YYTimelinePainter.h */,
+				CBCB552225A610A0003EB6BA /* YYTimelinePainter.m */,
+			);
+			path = YYTimeline;
+			sourceTree = "<group>";
+		};
+		CBCB552325A610A0003EB6BA /* YYMA */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB552425A610A0003EB6BA /* YYMAPainter.m */,
+				CBCB552525A610A0003EB6BA /* YYMAPainter.h */,
+			);
+			path = YYMA;
+			sourceTree = "<group>";
+		};
+		CBCB552625A610A0003EB6BA /* YYTime */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB552725A610A0003EB6BA /* YYTimePainter.m */,
+				CBCB552825A610A0003EB6BA /* YYTimePainter.h */,
+			);
+			path = YYTime;
+			sourceTree = "<group>";
+		};
+		CBCB552925A610A0003EB6BA /* YYEMA */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB552A25A610A0003EB6BA /* YYEMAPainter.h */,
+				CBCB552B25A610A0003EB6BA /* YYEMAPainter.m */,
+			);
+			path = YYEMA;
+			sourceTree = "<group>";
+		};
+		CBCB552C25A610A0003EB6BA /* YYCandle */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB552D25A610A0003EB6BA /* YYCandlePainter.h */,
+				CBCB552E25A610A0003EB6BA /* YYCandlePainter.m */,
+			);
+			path = YYCandle;
+			sourceTree = "<group>";
+		};
+		CBCB552F25A610A0003EB6BA /* YYVerticalText */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB553025A610A0003EB6BA /* YYVerticalTextPainter.m */,
+				CBCB553125A610A0003EB6BA /* YYVerticalTextPainter.h */,
+			);
+			path = YYVerticalText;
+			sourceTree = "<group>";
+		};
+		CBCB553325A610A0003EB6BA /* YYVol */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB553425A610A0003EB6BA /* YYVolPainter.m */,
+				CBCB553525A610A0003EB6BA /* YYVolPainter.h */,
+			);
+			path = YYVol;
+			sourceTree = "<group>";
+		};
+		CBCB553625A610A0003EB6BA /* YYWR */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB553725A610A0003EB6BA /* YYWRPainter.h */,
+				CBCB553825A610A0003EB6BA /* YYWRPainter.m */,
+			);
+			path = YYWR;
+			sourceTree = "<group>";
+		};
+		CBCB553925A610A0003EB6BA /* YYKDJ */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB553A25A610A0003EB6BA /* YYKDJPainter.h */,
+				CBCB553B25A610A0003EB6BA /* YYKDJPainter.m */,
+			);
+			path = YYKDJ;
+			sourceTree = "<group>";
+		};
+		CBCB553C25A610A0003EB6BA /* YYMACD */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB553D25A610A0003EB6BA /* YYMACDPainter.h */,
+				CBCB553E25A610A0003EB6BA /* YYMACDPainter.m */,
+			);
+			path = YYMACD;
+			sourceTree = "<group>";
+		};
+		CBCB554025A610A0003EB6BA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB554125A610A0003EB6BA /* Variable */,
+				CBCB554425A610A0003EB6BA /* Constant */,
+				CBCB554625A610A0003EB6BA /* Theme */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CBCB554125A610A0003EB6BA /* Variable */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB554225A610A0003EB6BA /* YYKlineGlobalVariable.m */,
+				CBCB554325A610A0003EB6BA /* YYKlineGlobalVariable.h */,
+			);
+			path = Variable;
+			sourceTree = "<group>";
+		};
+		CBCB554425A610A0003EB6BA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB554525A610A0003EB6BA /* YYKlineConstant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		CBCB554625A610A0003EB6BA /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB554725A610A0003EB6BA /* UIColor+YYKline.m */,
+				CBCB554825A610A0003EB6BA /* UIColor+YYKline.h */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		CBCB554A25A610A0003EB6BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB554B25A610A0003EB6BA /* YYKlineRootModel.h */,
+				CBCB554C25A610A0003EB6BA /* YYIndicatorModel.h */,
+				CBCB554D25A610A0003EB6BA /* YYKlineModel.m */,
+				CBCB554E25A610A0003EB6BA /* YYMinMaxModel.h */,
+				CBCB554F25A610A0003EB6BA /* YYKlineRootModel.m */,
+				CBCB555025A610A0003EB6BA /* YYKlineModel.h */,
+				CBCB555125A610A0003EB6BA /* YYIndicatorModel.m */,
+				CBCB555225A610A0003EB6BA /* YYMinMaxModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBCB555525A610A0003EB6BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB555625A610A0003EB6BA /* HomeViewController.m */,
+				CBCB555725A610A0003EB6BA /* PostViewController.m */,
+				CBCB555825A610A0003EB6BA /* LoginViewController.m */,
+				CBCB555925A610A0003EB6BA /* ProfileViewController.h */,
+				CBCB555A25A610A0003EB6BA /* MarketViewController.m */,
+				CBCB555B25A610A0003EB6BA /* QAViewController.h */,
+				CBCB555C25A610A0003EB6BA /* StockDetailViewController.h */,
+				CBCB555D25A610A0003EB6BA /* PostViewController.h */,
+				CBCB555E25A610A0003EB6BA /* HomeViewController.h */,
+				CBCB555F25A610A0003EB6BA /* ProfileViewController.m */,
+				CBCB556025A610A0003EB6BA /* LoginViewController.h */,
+				CBCB556125A610A0003EB6BA /* StockDetailViewController.m */,
+				CBCB556225A610A0003EB6BA /* QAViewController.m */,
+				CBCB556325A610A0003EB6BA /* MarketViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBCB556425A610A0003EB6BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB556525A610A0003EB6BA /* MarketModel.m */,
+				CBCB556625A610A0003EB6BA /* NewModel.h */,
+				CBCB556725A610A0003EB6BA /* QAModel.h */,
+				CBCB556825A610A0003EB6BA /* MarketModel.h */,
+				CBCB556925A610A0003EB6BA /* NewModel.m */,
+				CBCB556A25A610A0003EB6BA /* QAModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBCB556B25A610A0003EB6BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB556C25A610A0003EB6BA /* QATableViewCell.h */,
+				CBCB556D25A610A0003EB6BA /* HotStockCell.m */,
+				CBCB556E25A610A0003EB6BA /* PhotoCollectionViewCell.m */,
+				CBCB556F25A610A0003EB6BA /* AccountCell.m */,
+				CBCB557025A610A0003EB6BA /* MarketCell.m */,
+				CBCB557125A610A0003EB6BA /* QATableViewCell.m */,
+				CBCB557225A610A0003EB6BA /* HotStockCell.h */,
+				CBCB557325A610A0003EB6BA /* PhotoCollectionViewCell.h */,
+				CBCB557425A610A0003EB6BA /* MarketCell.h */,
+				CBCB557525A610A0003EB6BA /* AccountCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBCB557625A610A0003EB6BA /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB557725A610A0003EB6BA /* FZFenSTXJW.TTF */,
+				CBCB557825A610A0003EB6BA /* 方正剪纸简体.ttf */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		CBCB557A25A610A0003EB6BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB557B25A610A0003EB6BA /* ZTBaseTableViewCell.m */,
+				CBCB557C25A610A0003EB6BA /* ZTBaseViewController.h */,
+				CBCB557D25A610A0003EB6BA /* ZTNetwork.h */,
+				CBCB557E25A610A0003EB6BA /* Tools.m */,
+				CBCB557F25A610A0003EB6BA /* HUD.h */,
+				CBCB558025A610A0003EB6BA /* ZTTabBar.h */,
+				CBCB558125A610A0003EB6BA /* ZTNavigationController.m */,
+				CBCB558225A610A0003EB6BA /* UIImage+Image.m */,
+				CBCB558325A610A0003EB6BA /* ZTTabBarController.h */,
+				CBCB558425A610A0003EB6BA /* ZTNetwork.m */,
+				CBCB558525A610A0003EB6BA /* ZTBaseViewController.m */,
+				CBCB558625A610A0003EB6BA /* ZTBaseTableViewCell.h */,
+				CBCB558725A610A0003EB6BA /* ZTNavigationController.h */,
+				CBCB558825A610A0003EB6BA /* HUD.m */,
+				CBCB558925A610A0003EB6BA /* ZTTabBar.m */,
+				CBCB558A25A610A0003EB6BA /* Tools.h */,
+				CBCB558B25A610A0003EB6BA /* ZTTabBarController.m */,
+				CBCB558C25A610A0003EB6BA /* UIImage+Image.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E8802DC12BA64C361F503B2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A140CE3CB4E8983C1FDB2C8 /* Pods_Template.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBCB54C025A60CED003EB6BA /* Template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBCB54DA25A60CEE003EB6BA /* Build configuration list for PBXNativeTarget "Template" */;
+			buildPhases = (
+				9855485C5C2794B23D1A739F /* [CP] Check Pods Manifest.lock */,
+				CBCB54BD25A60CED003EB6BA /* Sources */,
+				CBCB54BE25A60CED003EB6BA /* Frameworks */,
+				CBCB54BF25A60CED003EB6BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Template;
+			productName = Template;
+			productReference = CBCB54C125A60CED003EB6BA /* Template.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBCB54B925A60CED003EB6BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CBCB54C025A60CED003EB6BA = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = CBCB54BC25A60CED003EB6BA /* Build configuration list for PBXProject "Template" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBCB54B825A60CED003EB6BA;
+			productRefGroup = CBCB54C225A60CED003EB6BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBCB54C025A60CED003EB6BA /* Template */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBCB54BF25A60CED003EB6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCB55BD25A610A0003EB6BA /* FZFenSTXJW.TTF in Resources */,
+				CBCB54D425A60CEE003EB6BA /* LaunchScreen.storyboard in Resources */,
+				CBCB54D125A60CEE003EB6BA /* Assets.xcassets in Resources */,
+				CBCB55BE25A610A0003EB6BA /* 方正剪纸简体.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9855485C5C2794B23D1A739F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Template-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBCB54BD25A60CED003EB6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCB559825A610A0003EB6BA /* LYFAlbumView.m in Sources */,
+				CBCB54CC25A60CED003EB6BA /* ViewController.m in Sources */,
+				CBCB55AF25A610A0003EB6BA /* PostViewController.m in Sources */,
+				CBCB55C025A610A0003EB6BA /* Tools.m in Sources */,
+				CBCB559925A610A0003EB6BA /* LYFPhotosManager.m in Sources */,
+				CBCB55B225A610A0003EB6BA /* ProfileViewController.m in Sources */,
+				CBCB55BB25A610A0003EB6BA /* MarketCell.m in Sources */,
+				CBCB558F25A610A0003EB6BA /* UIImageView+UIShorter.m in Sources */,
+				CBCB559125A610A0003EB6BA /* LYFAlbumViewController.m in Sources */,
+				CBCB559F25A610A0003EB6BA /* YYTimePainter.m in Sources */,
+				CBCB55BC25A610A0003EB6BA /* QATableViewCell.m in Sources */,
+				CBCB55B825A610A0003EB6BA /* HotStockCell.m in Sources */,
+				CBCB55A525A610A0003EB6BA /* YYKDJPainter.m in Sources */,
+				CBCB559E25A610A0003EB6BA /* YYMAPainter.m in Sources */,
+				CBCB55B525A610A0003EB6BA /* MarketModel.m in Sources */,
+				CBCB55A925A610A0003EB6BA /* YYKlineModel.m in Sources */,
+				CBCB54C625A60CED003EB6BA /* AppDelegate.m in Sources */,
+				CBCB55B925A610A0003EB6BA /* PhotoCollectionViewCell.m in Sources */,
+				CBCB55C725A610A0003EB6BA /* ZTTabBarController.m in Sources */,
+				CBCB559B25A610A0003EB6BA /* YYRSIPainter.m in Sources */,
+				CBCB55AC25A610A0003EB6BA /* YYMinMaxModel.m in Sources */,
+				CBCB55A025A610A0003EB6BA /* YYEMAPainter.m in Sources */,
+				CBCB55A125A610A0003EB6BA /* YYCandlePainter.m in Sources */,
+				CBCB55AA25A610A0003EB6BA /* YYKlineRootModel.m in Sources */,
+				CBCB55B625A610A0003EB6BA /* NewModel.m in Sources */,
+				CBCB54D725A60CEE003EB6BA /* main.m in Sources */,
+				CBCB55C225A610A0003EB6BA /* UIImage+Image.m in Sources */,
+				CBCB559625A610A0003EB6BA /* LYFAlbumTableViewCell.m in Sources */,
+				CBCB55BA25A610A0003EB6BA /* AccountCell.m in Sources */,
+				CBCB55AE25A610A0003EB6BA /* HomeViewController.m in Sources */,
+				CBCB559725A610A0003EB6BA /* LYFAlbumTableView.m in Sources */,
+				CBCB55A425A610A0003EB6BA /* YYWRPainter.m in Sources */,
+				CBCB55C425A610A0003EB6BA /* ZTBaseViewController.m in Sources */,
+				CBCB559525A610A0003EB6BA /* LYFAlbumCollectionViewCell.m in Sources */,
+				CBCB559025A610A0003EB6BA /* UILabel+UIShorter.m in Sources */,
+				CBCB55A225A610A0003EB6BA /* YYVerticalTextPainter.m in Sources */,
+				CBCB55B325A610A0003EB6BA /* StockDetailViewController.m in Sources */,
+				CBCB55B425A610A0003EB6BA /* QAViewController.m in Sources */,
+				CBCB55B025A610A0003EB6BA /* LoginViewController.m in Sources */,
+				CBCB559A25A610A0003EB6BA /* BRPlaceholderTextView.m in Sources */,
+				CBCB55B125A610A0003EB6BA /* MarketViewController.m in Sources */,
+				CBCB559225A610A0003EB6BA /* LYFPhotoManger.m in Sources */,
+				CBCB55AD25A610A0003EB6BA /* YYKlineView.m in Sources */,
+				CBCB559425A610A0003EB6BA /* LYFAlbumModel.m in Sources */,
+				CBCB55B725A610A0003EB6BA /* QAModel.m in Sources */,
+				CBCB54C925A60CED003EB6BA /* SceneDelegate.m in Sources */,
+				CBCB55C125A610A0003EB6BA /* ZTNavigationController.m in Sources */,
+				CBCB559C25A610A0003EB6BA /* YYBOLLPainter.m in Sources */,
+				CBCB558D25A610A0003EB6BA /* UIView+UIShorter.m in Sources */,
+				CBCB55BF25A610A0003EB6BA /* ZTBaseTableViewCell.m in Sources */,
+				CBCB55C325A610A0003EB6BA /* ZTNetwork.m in Sources */,
+				CBCB55A825A610A0003EB6BA /* UIColor+YYKline.m in Sources */,
+				CBCB558E25A610A0003EB6BA /* UIButton+UIShorter.m in Sources */,
+				CBCB559325A610A0003EB6BA /* LYFPhotoModel.m in Sources */,
+				CBCB55A725A610A0003EB6BA /* YYKlineGlobalVariable.m in Sources */,
+				CBCB55AB25A610A0003EB6BA /* YYIndicatorModel.m in Sources */,
+				CBCB55C625A610A0003EB6BA /* ZTTabBar.m in Sources */,
+				CBCB559D25A610A0003EB6BA /* YYTimelinePainter.m in Sources */,
+				CBCB55A625A610A0003EB6BA /* YYMACDPainter.m in Sources */,
+				CBCB55C525A610A0003EB6BA /* HUD.m in Sources */,
+				CBCB55A325A610A0003EB6BA /* YYVolPainter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBCB54D225A60CEE003EB6BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBCB54D325A60CEE003EB6BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBCB54D825A60CEE003EB6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBCB54D925A60CEE003EB6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBCB54DB25A60CEE003EB6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85618A362D5060A5EF659E10 /* Pods-Template.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Template/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LuckyStrike.Template;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CBCB54DC25A60CEE003EB6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0981F3DA9764314C239CB034 /* Pods-Template.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Template/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LuckyStrike.Template;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBCB54BC25A60CED003EB6BA /* Build configuration list for PBXProject "Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCB54D825A60CEE003EB6BA /* Debug */,
+				CBCB54D925A60CEE003EB6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBCB54DA25A60CEE003EB6BA /* Build configuration list for PBXNativeTarget "Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCB54DB25A60CEE003EB6BA /* Debug */,
+				CBCB54DC25A60CEE003EB6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBCB54B925A60CED003EB6BA /* Project object */;
+}
